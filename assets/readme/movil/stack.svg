@@ -1,56 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 850" width="400" height="850" role="img" aria-label="Stack: HTML y CSS, Estructura y estilos, en Casa Rendón · BlackJack; JavaScript, Lógica en el navegador, en Casa Rendón · BlackJack; React, Componentes de interfaz, en Casa Rendón; Bootstrap, Diseño responsive, en CineX (frontend); Flutter y Dart, Apps móviles, en Numi; Java, Programación orientada a objetos, en CineX · POO en Java; Spring Boot, APIs REST, en CineX; Python, Servidores y scripts, en BlackJack · Estructuras; MySQL, Base de datos relacional, en CineX; Git y GitHub, Trabajo en equipo, en Todos los proyectos; VS Code, Editor, en Todos los proyectos; Postman, Probar APIs, académico; Docker, Contenedores, académico." font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"><title>Stack</title><defs><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}</style></defs><rect width="400" height="850" rx="12" fill="#0d1117"/>
-<text x="28" y="48" font-size="20" font-weight="600" fill="#e6edf3" text-anchor="start">Stack</text>
-<rect x="28" y="72" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="96" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">HTML y CSS</text>
-<text x="28" y="116" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Estructura y estilos</text>
-<text x="372" y="96" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">Casa Rendón · BlackJack</text>
-<rect x="28" y="130" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="154" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">JavaScript</text>
-<text x="28" y="174" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Lógica en el navegador</text>
-<text x="372" y="154" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">Casa Rendón · BlackJack</text>
-<rect x="28" y="188" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="212" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">React</text>
-<text x="28" y="232" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Componentes de interfaz</text>
-<text x="372" y="212" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">Casa Rendón</text>
-<rect x="28" y="246" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="270" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Bootstrap</text>
-<text x="28" y="290" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Diseño responsive</text>
-<text x="372" y="270" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">CineX (frontend)</text>
-<rect x="28" y="304" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="328" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Flutter y Dart</text>
-<text x="28" y="348" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Apps móviles</text>
-<text x="372" y="328" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">Numi</text>
-<rect x="28" y="362" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="386" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Java</text>
-<text x="28" y="406" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Programación orientada a objetos</text>
-<text x="372" y="386" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">CineX · POO en Java</text>
-<rect x="28" y="420" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="444" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Spring Boot</text>
-<text x="28" y="464" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">APIs REST</text>
-<text x="372" y="444" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">CineX</text>
-<rect x="28" y="478" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="502" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Python</text>
-<text x="28" y="522" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Servidores y scripts</text>
-<text x="372" y="502" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">BlackJack · Estructuras</text>
-<rect x="28" y="536" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="560" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">MySQL</text>
-<text x="28" y="580" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Base de datos relacional</text>
-<text x="372" y="560" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">CineX</text>
-<rect x="28" y="594" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="618" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Git y GitHub</text>
-<text x="28" y="638" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Trabajo en equipo</text>
-<text x="372" y="618" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">Todos los proyectos</text>
-<rect x="28" y="652" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="676" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">VS Code</text>
-<text x="28" y="696" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Editor</text>
-<text x="372" y="676" font-size="12" font-weight="400" fill="#7cc4fa" text-anchor="end">Todos los proyectos</text>
-<rect x="28" y="710" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="734" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Postman</text>
-<text x="28" y="754" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Probar APIs</text>
-<rect x="303.04" y="720.5" width="69.46000000000001" height="19" rx="9.5" fill="none" stroke="#6b7480"/>
-<text x="310.54" y="734" font-size="11" font-weight="500" fill="#9aa4b1" text-anchor="start">Académico</text>
-<rect x="28" y="768" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="792" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Docker</text>
-<text x="28" y="812" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">Contenedores</text>
-<rect x="303.04" y="778.5" width="69.46000000000001" height="19" rx="9.5" fill="none" stroke="#6b7480"/>
-<text x="310.54" y="792" font-size="11" font-weight="500" fill="#9aa4b1" text-anchor="start">Académico</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 1296" width="400" height="1296" role="img" aria-label="Stack: HTML y CSS, Estructura y estilos, en Casa Rendón · BlackJack; JavaScript, Lógica en el navegador, en Casa Rendón · BlackJack; React, Componentes de interfaz, en Casa Rendón; Bootstrap, Diseño responsive, en CineX (frontend); Flutter y Dart, Apps móviles, en Numi; Java, Programación orientada a objetos, en CineX · POO en Java; Spring Boot, APIs REST, en CineX; Python, Servidores y scripts, en BlackJack · Estructuras; MySQL, Base de datos relacional, en CineX; Git y GitHub, Trabajo en equipo, en Todos los proyectos; VS Code, Editor, en Todos los proyectos; Postman, Probar APIs, académico; Docker, Contenedores, académico."><title>Stack</title><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset=".55" stop-color="#0d1117"/><stop offset="1" stop-color="#0d1117"/></linearGradient><style>
+.t{font-family:'Courier New',Consolas,'Liberation Mono',monospace}
+.s{animation:tw 3s steps(2,end) infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.f{animation:flt 3.2s ease-in-out infinite}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.b{animation:rip 2.6s ease-in-out infinite}
+@keyframes rip{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.s,.f,.b,.cur{animation:none}}
+</style></defs><rect width="400" height="1296" fill="url(#bg)"/>
+<text class="t" x="24" y="40" font-size="18" font-weight="700" fill="#e6edf3" text-anchor="start">STACK</text>
+<rect x="24" y="48" width="70" height="3" fill="#f0a1c2"/>
+<polygon points="26,66 374,66 374,68 376,68 376,148 374,148 374,150 26,150 26,148 24,148 24,68 26,68" fill="#30363d"/>
+<polygon points="28,68 372,68 372,70 374,70 374,146 372,146 372,148 28,148 28,146 26,146 26,70 28,70" fill="#0d1117"/>
+<rect x="36" y="80" width="12" height="12" fill="#e8734a"/>
+<rect x="36" y="80" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="91" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">HTML y CSS</text>
+<text class="t" x="36" y="112" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Estructura y estilos</text>
+<text class="t" x="36" y="133" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">Casa Rendón · BlackJack</text>
+<polygon points="26,160 374,160 374,162 376,162 376,242 374,242 374,244 26,244 26,242 24,242 24,162 26,162" fill="#30363d"/>
+<polygon points="28,162 372,162 372,164 374,164 374,240 372,240 372,242 28,242 28,240 26,240 26,164 28,164" fill="#0d1117"/>
+<rect x="36" y="174" width="12" height="12" fill="#e8c94a"/>
+<rect x="36" y="174" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="185" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">JavaScript</text>
+<text class="t" x="36" y="206" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Lógica en el navegador</text>
+<text class="t" x="36" y="227" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">Casa Rendón · BlackJack</text>
+<polygon points="26,254 374,254 374,256 376,256 376,336 374,336 374,338 26,338 26,336 24,336 24,256 26,256" fill="#30363d"/>
+<polygon points="28,256 372,256 372,258 374,258 374,334 372,334 372,336 28,336 28,334 26,334 26,258 28,258" fill="#0d1117"/>
+<rect x="36" y="268" width="12" height="12" fill="#5ec8e6"/>
+<rect x="36" y="268" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="279" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">React</text>
+<text class="t" x="36" y="300" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Componentes de interfaz</text>
+<text class="t" x="36" y="321" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">Casa Rendón</text>
+<polygon points="26,348 374,348 374,350 376,350 376,430 374,430 374,432 26,432 26,430 24,430 24,350 26,350" fill="#30363d"/>
+<polygon points="28,350 372,350 372,352 374,352 374,428 372,428 372,430 28,430 28,428 26,428 26,352 28,352" fill="#0d1117"/>
+<rect x="36" y="362" width="12" height="12" fill="#8a6ae0"/>
+<rect x="36" y="362" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="373" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Bootstrap</text>
+<text class="t" x="36" y="394" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Diseño responsive</text>
+<text class="t" x="36" y="415" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">CineX (frontend)</text>
+<polygon points="26,442 374,442 374,444 376,444 376,524 374,524 374,526 26,526 26,524 24,524 24,444 26,444" fill="#30363d"/>
+<polygon points="28,444 372,444 372,446 374,446 374,522 372,522 372,524 28,524 28,522 26,522 26,446 28,446" fill="#0d1117"/>
+<rect x="36" y="456" width="12" height="12" fill="#4aa8e8"/>
+<rect x="36" y="456" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="467" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Flutter y Dart</text>
+<text class="t" x="36" y="488" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Apps móviles</text>
+<text class="t" x="36" y="509" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">Numi</text>
+<polygon points="26,536 374,536 374,538 376,538 376,618 374,618 374,620 26,620 26,618 24,618 24,538 26,538" fill="#30363d"/>
+<polygon points="28,538 372,538 372,540 374,540 374,616 372,616 372,618 28,618 28,616 26,616 26,540 28,540" fill="#0d1117"/>
+<rect x="36" y="550" width="12" height="12" fill="#e0884a"/>
+<rect x="36" y="550" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="561" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Java</text>
+<text class="t" x="36" y="582" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Programación orientada a objetos</text>
+<text class="t" x="36" y="603" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">CineX · POO en Java</text>
+<polygon points="26,630 374,630 374,632 376,632 376,712 374,712 374,714 26,714 26,712 24,712 24,632 26,632" fill="#30363d"/>
+<polygon points="28,632 372,632 372,634 374,634 374,710 372,710 372,712 28,712 28,710 26,710 26,634 28,634" fill="#0d1117"/>
+<rect x="36" y="644" width="12" height="12" fill="#6ac86a"/>
+<rect x="36" y="644" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="655" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Spring Boot</text>
+<text class="t" x="36" y="676" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">APIs REST</text>
+<text class="t" x="36" y="697" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">CineX</text>
+<polygon points="26,724 374,724 374,726 376,726 376,806 374,806 374,808 26,808 26,806 24,806 24,726 26,726" fill="#30363d"/>
+<polygon points="28,726 372,726 372,728 374,728 374,804 372,804 372,806 28,806 28,804 26,804 26,728 28,728" fill="#0d1117"/>
+<rect x="36" y="738" width="12" height="12" fill="#4a8ae0"/>
+<rect x="36" y="738" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="749" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Python</text>
+<text class="t" x="36" y="770" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Servidores y scripts</text>
+<text class="t" x="36" y="791" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">BlackJack · Estructuras</text>
+<polygon points="26,818 374,818 374,820 376,820 376,900 374,900 374,902 26,902 26,900 24,900 24,820 26,820" fill="#30363d"/>
+<polygon points="28,820 372,820 372,822 374,822 374,898 372,898 372,900 28,900 28,898 26,898 26,822 28,822" fill="#0d1117"/>
+<rect x="36" y="832" width="12" height="12" fill="#4a9ac0"/>
+<rect x="36" y="832" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="843" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">MySQL</text>
+<text class="t" x="36" y="864" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Base de datos relacional</text>
+<text class="t" x="36" y="885" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">CineX</text>
+<polygon points="26,912 374,912 374,914 376,914 376,994 374,994 374,996 26,996 26,994 24,994 24,914 26,914" fill="#30363d"/>
+<polygon points="28,914 372,914 372,916 374,916 374,992 372,992 372,994 28,994 28,992 26,992 26,916 28,916" fill="#0d1117"/>
+<rect x="36" y="926" width="12" height="12" fill="#e86a5a"/>
+<rect x="36" y="926" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="937" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Git y GitHub</text>
+<text class="t" x="36" y="958" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Trabajo en equipo</text>
+<text class="t" x="36" y="979" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">Todos los proyectos</text>
+<polygon points="26,1006 374,1006 374,1008 376,1008 376,1088 374,1088 374,1090 26,1090 26,1088 24,1088 24,1008 26,1008" fill="#30363d"/>
+<polygon points="28,1008 372,1008 372,1010 374,1010 374,1086 372,1086 372,1088 28,1088 28,1086 26,1086 26,1010 28,1010" fill="#0d1117"/>
+<rect x="36" y="1020" width="12" height="12" fill="#3a9ae8"/>
+<rect x="36" y="1020" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="1031" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">VS Code</text>
+<text class="t" x="36" y="1052" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Editor</text>
+<text class="t" x="36" y="1073" font-size="12" font-weight="700" fill="#f0a1c2" text-anchor="start">Todos los proyectos</text>
+<polygon points="26,1100 374,1100 374,1102 376,1102 376,1182 374,1182 374,1184 26,1184 26,1182 24,1182 24,1102 26,1102" fill="#30363d"/>
+<polygon points="28,1102 372,1102 372,1104 374,1104 374,1180 372,1180 372,1182 28,1182 28,1180 26,1180 26,1104 28,1104" fill="#0d1117"/>
+<rect x="36" y="1114" width="12" height="12" fill="#e8864a"/>
+<rect x="36" y="1114" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="1125" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Postman</text>
+<text class="t" x="36" y="1146" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Probar APIs</text>
+<rect x="36" y="1154" width="66" height="18" fill="none" stroke="#79c0ff" stroke-width="1.5"/>
+<text class="t" x="42" y="1167" font-size="10" font-weight="700" fill="#79c0ff" text-anchor="start">ACADÉMICO</text>
+<polygon points="26,1194 374,1194 374,1196 376,1196 376,1276 374,1276 374,1278 26,1278 26,1276 24,1276 24,1196 26,1196" fill="#30363d"/>
+<polygon points="28,1196 372,1196 372,1198 374,1198 374,1274 372,1274 372,1276 28,1276 28,1274 26,1274 26,1198 28,1198" fill="#0d1117"/>
+<rect x="36" y="1208" width="12" height="12" fill="#3a8ae0"/>
+<rect x="36" y="1208" width="12" height="3" fill="#ffffff" opacity=".35"/>
+<text class="t" x="58" y="1219" font-size="16" font-weight="700" fill="#e6edf3" text-anchor="start">Docker</text>
+<text class="t" x="36" y="1240" font-size="13" font-weight="400" fill="#c9d1d9" text-anchor="start">Contenedores</text>
+<rect x="36" y="1248" width="66" height="18" fill="none" stroke="#79c0ff" stroke-width="1.5"/>
+<text class="t" x="42" y="1261" font-size="10" font-weight="700" fill="#79c0ff" text-anchor="start">ACADÉMICO</text></svg>

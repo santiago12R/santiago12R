@@ -1,15 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350" role="img" aria-label="Numi, en desarrollo: App educativa en Flutter para niños de 1.° a 5.° de primaria en zonas rurales de Medellín, sin internet. 15 actividades en 5 materias, con asistente de IA offline. Mi rol: pantallas de la app y diseño responsive." font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"><title>Numi: App educativa en Flutter para niños de 1.° a 5.° de primaria en zonas rurales de Medellín, sin internet.</title><defs><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}</style></defs><rect x="0.5" y="0.5" width="399" height="349" rx="14" fill="#0d1117" stroke="#262c36"/>
-<circle cx="32" cy="38" r="3.5" fill="#e3b341"/>
-<text x="41" y="42" font-size="12" font-weight="500" fill="#e3b341" text-anchor="start">En desarrollo</text>
-<text x="372" y="42" font-size="12" font-weight="400" fill="#6b7480" text-anchor="end">2026 · equipo de 4</text>
-<text x="28" y="84" font-size="24" font-weight="600" fill="#e6edf3" text-anchor="start" letter-spacing="-.3">Numi</text>
-<text x="28" y="112" font-size="14" font-weight="400" fill="#9aa4b1" text-anchor="start">App educativa en Flutter para niños de 1.° a</text>
-<text x="28" y="133" font-size="14" font-weight="400" fill="#9aa4b1" text-anchor="start">5.° de primaria en zonas rurales de Medellín,</text>
-<text x="28" y="154" font-size="14" font-weight="400" fill="#9aa4b1" text-anchor="start">sin internet.</text>
-<text x="28" y="207" font-size="32" font-weight="600" fill="#e6edf3" text-anchor="start">15</text>
-<text x="77.12" y="199" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">actividades en 5 materias, con asistente</text>
-<text x="77.12" y="217" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">de IA offline</text>
-<text x="28" y="251" font-size="14" fill="#9aa4b1"><tspan fill="#e6edf3" font-weight="600">Mi rol:</tspan> pantallas de la app y diseño</text>
-<text x="28" y="272" font-size="14" font-weight="400" fill="#9aa4b1" text-anchor="start">responsive.</text>
-<rect x="28" y="298" width="344" height="1" fill="#1b212a"/>
-<text x="28" y="324" font-size="12" font-weight="500" fill="#7cc4fa" text-anchor="start">Flutter  ·  Dart</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="400" height="380" role="img" aria-label="Numi, en desarrollo: App educativa en Flutter para niños de 1.° a 5.° de primaria en zonas rurales de Medellín, sin internet. 15 actividades en 5 materias, con asistente de IA offline. Mi rol: pantallas de la app y diseño responsive."><title>Numi — App educativa en Flutter para niños de 1.° a 5.° de primaria en zonas rurales de Medellín, sin internet.</title><defs><style>
+.t{font-family:'Courier New',Consolas,'Liberation Mono',monospace}
+.s{animation:tw 3s steps(2,end) infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.f{animation:flt 3.2s ease-in-out infinite}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.b{animation:rip 2.6s ease-in-out infinite}
+@keyframes rip{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.s,.f,.b,.cur{animation:none}}
+</style></defs><polygon points="4,0 396,0 396,4 400,4 400,376 396,376 396,380 4,380 4,376 0,376 0,4 4,4" fill="#30363d"/>
+<polygon points="6,2 394,2 394,6 398,6 398,374 394,374 394,378 6,378 6,374 2,374 2,6 6,6" fill="#0d1117"/>
+<rect x="2" y="2" width="396" height="6" fill="#f0a1c2" opacity=".85"/>
+<polygon points="22,22 119,22 119,24 121,24 121,42 119,42 119,44 22,44 22,42 20,42 20,24 22,24" fill="#e3c35a"/>
+<polygon points="24,24 117,24 117,26 119,26 119,40 117,40 117,42 24,42 24,40 22,40 22,26 24,26" fill="#161b22"/>
+<text class="t" x="28" y="37" font-size="11" font-weight="700" fill="#e3c35a" text-anchor="start">EN DESARROLLO</text>
+<text class="t" x="380" y="37" font-size="12" font-weight="400" fill="#8b949e" text-anchor="end">2026 · equipo de 4</text>
+<rect x="32" y="62" width="8" height="4" fill="#e3c35a"/>
+<rect x="28" y="66" width="16" height="4" fill="#e3c35a"/>
+<rect x="20" y="70" width="32" height="4" fill="#e3c35a"/>
+<rect x="24" y="74" width="24" height="4" fill="#e3c35a"/>
+<rect x="28" y="78" width="16" height="4" fill="#e3c35a"/>
+<rect x="24" y="82" width="8" height="4" fill="#e3c35a"/>
+<rect x="40" y="82" width="8" height="4" fill="#e3c35a"/>
+<rect x="20" y="86" width="8" height="4" fill="#e3c35a"/>
+<rect x="44" y="86" width="8" height="4" fill="#e3c35a"/>
+<text class="t" x="62" y="88" font-size="26" font-weight="700" fill="#e6edf3" text-anchor="start">Numi</text>
+<text class="t" x="20" y="120" font-size="15" font-weight="400" fill="#c9d1d9" text-anchor="start">App educativa en Flutter para niños de</text>
+<text class="t" x="20" y="141" font-size="15" font-weight="400" fill="#c9d1d9" text-anchor="start">1.° a 5.° de primaria en zonas rurales</text>
+<text class="t" x="20" y="162" font-size="15" font-weight="400" fill="#c9d1d9" text-anchor="start">de Medellín, sin internet.</text>
+<text class="t" x="20" y="229" font-size="40" font-weight="700" fill="#e3c35a" text-anchor="start">15</text>
+<text class="t" x="80.0" y="218" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="start">actividades en 5 materias, con</text>
+<text class="t" x="80.0" y="237" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="start">asistente de IA offline</text>
+<text class="t" x="20" y="270" font-size="15" fill="#c9d1d9"><tspan fill="#f0a1c2" font-weight="700">Mi rol:</tspan> pantallas de la app y diseño</text>
+<text class="t" x="20" y="291" font-size="15" font-weight="400" fill="#c9d1d9" text-anchor="start">responsive.</text>
+<rect x="20" y="340" width="60" height="22" fill="#161b22"/>
+<rect x="20" y="360" width="60" height="2" fill="#79c0ff" opacity=".6"/>
+<text class="t" x="27" y="355" font-size="11" font-weight="700" fill="#79c0ff" text-anchor="start">Flutter</text>
+<rect x="86" y="340" width="40" height="22" fill="#161b22"/>
+<rect x="86" y="360" width="40" height="2" fill="#79c0ff" opacity=".6"/>
+<text class="t" x="93" y="355" font-size="11" font-weight="700" fill="#79c0ff" text-anchor="start">Dart</text></svg>

@@ -1,14 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 316" width="490" height="316" role="img" aria-label="Casa Rendón, cliente real, en vivo: Sitio web de una marca familiar de café y vino de Andes, Antioquia: historia, catálogo y reservas. 7 secciones; reservas y reseñas llegan a WhatsApp. Mi rol: HTML, CSS, JavaScript y componentes en React." font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"><title>Casa Rendón: Sitio web de una marca familiar de café y vino de Andes, Antioquia: historia, catálogo y reservas.</title><defs><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}</style></defs><rect x="0.5" y="0.5" width="489" height="315" rx="14" fill="#0d1117" stroke="#262c36"/>
-<circle cx="32" cy="38" r="3.5" fill="#4ac26b"/>
-<text x="41" y="42" font-size="12" font-weight="500" fill="#4ac26b" text-anchor="start">Cliente real</text>
-<circle cx="139.76" cy="38" r="3.5" fill="#4ac26b"/>
-<text x="148.76" y="42" font-size="12" font-weight="500" fill="#4ac26b" text-anchor="start">En vivo</text>
-<text x="462" y="42" font-size="12" font-weight="400" fill="#6b7480" text-anchor="end">2026 · equipo</text>
-<text x="28" y="84" font-size="24" font-weight="600" fill="#e6edf3" text-anchor="start" letter-spacing="-.3">Casa Rendón</text>
-<text x="28" y="112" font-size="14" font-weight="400" fill="#9aa4b1" text-anchor="start">Sitio web de una marca familiar de café y vino de Andes,</text>
-<text x="28" y="133" font-size="14" font-weight="400" fill="#9aa4b1" text-anchor="start">Antioquia: historia, catálogo y reservas.</text>
-<text x="28" y="186" font-size="32" font-weight="600" fill="#e6edf3" text-anchor="start">7</text>
-<text x="58.56" y="178" font-size="13" font-weight="400" fill="#9aa4b1" text-anchor="start">secciones; reservas y reseñas llegan a WhatsApp</text>
-<text x="28" y="220" font-size="14" fill="#9aa4b1"><tspan fill="#e6edf3" font-weight="600">Mi rol:</tspan> HTML, CSS, JavaScript y componentes en React.</text>
-<rect x="28" y="264" width="434" height="1" fill="#1b212a"/>
-<text x="28" y="290" font-size="12" font-weight="500" fill="#7cc4fa" text-anchor="start">HTML  ·  CSS  ·  JavaScript  ·  React</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 340" width="490" height="340" role="img" aria-label="Casa Rendón, cliente real, en vivo: Sitio web de una marca familiar de café y vino de Andes, Antioquia: historia, catálogo y reservas. 7 secciones; reservas y reseñas llegan a WhatsApp. Mi rol: HTML, CSS, JavaScript y componentes en React."><title>Casa Rendón — Sitio web de una marca familiar de café y vino de Andes, Antioquia: historia, catálogo y reservas.</title><defs><style>
+.t{font-family:'Courier New',Consolas,'Liberation Mono',monospace}
+.s{animation:tw 3s steps(2,end) infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.f{animation:flt 3.2s ease-in-out infinite}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.b{animation:rip 2.6s ease-in-out infinite}
+@keyframes rip{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.s,.f,.b,.cur{animation:none}}
+</style></defs><polygon points="4,0 486,0 486,4 490,4 490,336 486,336 486,340 4,340 4,336 0,336 0,4 4,4" fill="#30363d"/>
+<polygon points="6,2 484,2 484,6 488,6 488,334 484,334 484,338 6,338 6,334 2,334 2,6 6,6" fill="#0d1117"/>
+<rect x="2" y="2" width="486" height="6" fill="#f0a1c2" opacity=".85"/>
+<polygon points="22,22 113,22 113,24 115,24 115,42 113,42 113,44 22,44 22,42 20,42 20,24 22,24" fill="#56d364"/>
+<polygon points="24,24 111,24 111,26 113,26 113,40 111,40 111,42 24,42 24,40 22,40 22,26 24,26" fill="#161b22"/>
+<text class="t" x="28" y="37" font-size="11" font-weight="700" fill="#56d364" text-anchor="start">CLIENTE REAL</text>
+<polygon points="125,22 183,22 183,24 185,24 185,42 183,42 183,44 125,44 125,42 123,42 123,24 125,24" fill="#56d364"/>
+<polygon points="127,24 181,24 181,26 183,26 183,40 181,40 181,42 127,42 127,40 125,40 125,26 127,26" fill="#161b22"/>
+<text class="t" x="131" y="37" font-size="11" font-weight="700" fill="#56d364" text-anchor="start">EN VIVO</text>
+<text class="t" x="470" y="37" font-size="12" font-weight="400" fill="#8b949e" text-anchor="end">2026 · equipo</text>
+<rect x="28" y="62" width="4" height="4" fill="#e6edf3"/>
+<rect x="36" y="62" width="4" height="4" fill="#e6edf3"/>
+<rect x="32" y="66" width="4" height="4" fill="#e6edf3"/>
+<rect x="40" y="66" width="4" height="4" fill="#e6edf3"/>
+<rect x="20" y="70" width="24" height="4" fill="#c9895a"/>
+<rect x="20" y="74" width="32" height="4" fill="#c9895a"/>
+<rect x="20" y="78" width="24" height="4" fill="#c9895a"/>
+<rect x="48" y="78" width="4" height="4" fill="#c9895a"/>
+<rect x="20" y="82" width="32" height="4" fill="#c9895a"/>
+<rect x="20" y="86" width="24" height="4" fill="#c9895a"/>
+<rect x="24" y="90" width="16" height="4" fill="#c9895a"/>
+<text class="t" x="62" y="88" font-size="26" font-weight="700" fill="#e6edf3" text-anchor="start">Casa Rendón</text>
+<text class="t" x="20" y="120" font-size="14" font-weight="400" fill="#c9d1d9" text-anchor="start">Sitio web de una marca familiar de café y vino de</text>
+<text class="t" x="20" y="140" font-size="14" font-weight="400" fill="#c9d1d9" text-anchor="start">Andes, Antioquia: historia, catálogo y reservas.</text>
+<text class="t" x="20" y="206" font-size="40" font-weight="700" fill="#e3c35a" text-anchor="start">7</text>
+<text class="t" x="56.0" y="194" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">secciones; reservas y reseñas llegan a WhatsApp</text>
+<text class="t" x="20" y="230" font-size="14" fill="#c9d1d9"><tspan fill="#f0a1c2" font-weight="700">Mi rol:</tspan> HTML, CSS, JavaScript y componentes en React.</text>
+<rect x="20" y="300" width="40" height="22" fill="#161b22"/>
+<rect x="20" y="320" width="40" height="2" fill="#79c0ff" opacity=".6"/>
+<text class="t" x="27" y="315" font-size="11" font-weight="700" fill="#79c0ff" text-anchor="start">HTML</text>
+<rect x="66" y="300" width="33" height="22" fill="#161b22"/>
+<rect x="66" y="320" width="33" height="2" fill="#79c0ff" opacity=".6"/>
+<text class="t" x="73" y="315" font-size="11" font-weight="700" fill="#79c0ff" text-anchor="start">CSS</text>
+<rect x="105" y="300" width="80" height="22" fill="#161b22"/>
+<rect x="105" y="320" width="80" height="2" fill="#79c0ff" opacity=".6"/>
+<text class="t" x="112" y="315" font-size="11" font-weight="700" fill="#79c0ff" text-anchor="start">JavaScript</text>
+<rect x="191" y="300" width="47" height="22" fill="#161b22"/>
+<rect x="191" y="320" width="47" height="2" fill="#79c0ff" opacity=".6"/>
+<text class="t" x="198" y="315" font-size="11" font-weight="700" fill="#79c0ff" text-anchor="start">React</text></svg>
