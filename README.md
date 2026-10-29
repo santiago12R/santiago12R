@@ -91,12 +91,9 @@ Me interesa entender cómo funcionan los sistemas por dentro: desde estructurar 
 
 ### 05 &nbsp;/&nbsp; Contribuciones
 
-<p>
-  <img height="150" src="https://streak-stats.demolab.com?user=santiago12R&theme=github-dark-blue&hide_border=true&background=0d1117&locale=es" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=santiago12R&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&locale=es" />
-</p>
+<img height="150" src="https://streak-stats.demolab.com?user=santiago12R&theme=github-dark-blue&hide_border=true&background=0d1117&locale=es" />
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=santiago12R&bg_color=0d1117&color=8b949e&line=2ea44f&point=ffffff&area=true&area_color=2ea44f&hide_border=true" />
+<img width="100%" src="https://ghchart.rshah.org/2ea44f/santiago12R" />
 
 ---
 
