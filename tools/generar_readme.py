@@ -14,9 +14,9 @@ DEST = os.path.join(RAIZ, "assets", "readme")
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # ------------------------------------------------------------------ paleta
-BG0, BG1, BG2 = "#0d1117", "#0d1117", "#0d1117"
-PANEL, PANEL2, BORDE = "#0d1117", "#161b22", "#30363d"
-CREMA, ROSA, CIAN, GEMA, AMAR, VERDE, GRIS = "#e6edf3", "#f0a1c2", "#79c0ff", "#6ee7d8", "#e3c35a", "#56d364", "#8b949e"
+BG0, BG1, BG2 = "#06090f", "#0b1120", "#0f1729"
+PANEL, PANEL2, BORDE = "#0e1525", "#141d33", "#2a3b5f"
+CREMA, ROSA, CIAN, GEMA, AMAR, VERDE, GRIS = "#f5f1ea", "#ff8fb8", "#7dd3fc", "#5ee6e0", "#ffe066", "#7ee08a", "#93a4bf"
 FUENTE = "'Courier New',Consolas,'Liberation Mono',monospace"
 P = 4
 
@@ -292,7 +292,7 @@ def nubes(L, posiciones):
     for x, y in posiciones:
         L.add('<g class="cl" opacity=".55">')
         for dx, dy, w in [(8, 0, 20), (0, 6, 44), (-8, 12, 60)]:
-            L.px(x + dx, y + dy, "#21262d", w, 6)
+            L.px(x + dx, y + dy, "#1c2742", w, 6)
         L.add('</g>')
 
 
@@ -433,7 +433,7 @@ def tarjeta(nombre, titulo, estados, meta, desc, cifra_n, cifra_txt, rol, stack,
     L.texto(62, 88, titulo, fs_t, CREMA, 700)
     y = 120
     for ln in partir(desc, cols):
-        L.texto(20, y, ln, fs, "#c9d1d9")
+        L.texto(20, y, ln, fs, "#d3dceb")
         y += fs + 6
     # cifra
     y += 14
@@ -447,9 +447,9 @@ def tarjeta(nombre, titulo, estados, meta, desc, cifra_n, cifra_txt, rol, stack,
     # rol
     for i, ln in enumerate(partir("Mi rol: " + rol, cols)):
         if i == 0:
-            L.add(f'<text class="t" x="20" y="{y}" font-size="{fs}" fill="#c9d1d9"><tspan fill="{ROSA}" font-weight="700">Mi rol:</tspan>{esc(ln[7:])}</text>')
+            L.add(f'<text class="t" x="20" y="{y}" font-size="{fs}" fill="#d3dceb"><tspan fill="{ROSA}" font-weight="700">Mi rol:</tspan>{esc(ln[7:])}</text>')
         else:
-            L.texto(20, y, ln, fs, "#c9d1d9")
+            L.texto(20, y, ln, fs, "#d3dceb")
         y += fs + 6
     # stack
     x, y = 20, H - 40
@@ -679,7 +679,7 @@ def ficha_stack(L, x, y, w, h, n, u, p, color, fs=13):
     L.px(x + 12, y + 14, color, 12, 12)
     L.px(x + 12, y + 14, "#ffffff", 12, 3, ' opacity=".35"')
     L.texto(x + 34, y + 25, n, fs + 2, CREMA, 700)
-    L.texto(x + 12, y + 46, u, fs - 1, "#c9d1d9")
+    L.texto(x + 12, y + 46, u, fs - 1, "#d3dceb")
     if p == "ACADÉMICO":
         wa = int(ancho_texto(p, 10)) + 12
         L.add(f'<rect x="{x + 12}" y="{y + 54}" width="{wa}" height="18" fill="none" stroke="{CIAN}" stroke-width="1.5"/>')
@@ -732,7 +732,7 @@ def cierre(movil=False):
         L.texto(24, 52, "¿Tu equipo necesita", 22, CREMA, 700)
         L.texto(24, 82, "un practicante?", 22, CREMA, 700)
         L.texto(24, 114, "Full stack o analítica de datos.", 14, ROSA, 700)
-        L.texto(24, 136, "Disponible para práctica empresarial.", 14, "#c9d1d9")
+        L.texto(24, 136, "Disponible para práctica empresarial.", 14, "#d3dceb")
         L.panel(24, 156, 352, 48, PANEL2, CIAN)
         filas, pal = ICONOS["correo"]
         L.sprite(40, 172, filas, pal, 3)
@@ -741,7 +741,7 @@ def cierre(movil=False):
     else:
         L.texto(40, 62, "¿Tu equipo necesita un practicante?", 26, CREMA, 700)
         L.texto(40, 94, "Full stack o analítica de datos.", 15, ROSA, 700)
-        L.texto(40, 116, "Disponible para práctica empresarial.", 15, "#c9d1d9")
+        L.texto(40, 116, "Disponible para práctica empresarial.", 15, "#d3dceb")
         L.panel(600, 46, 360, 52, PANEL2, CIAN)
         filas, pal = ICONOS["correo"]
         L.sprite(618, 64, filas, pal, 3)

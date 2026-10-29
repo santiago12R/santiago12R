@@ -9,4 +9,4 @@
 .cur{animation:cur 1s steps(1) infinite}
 @keyframes cur{0%,49%{opacity:1}50%,100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.s,.f,.b,.cur{animation:none}}
-</style></defs><text class="t" x="119" y="22" font-size="13" font-weight="700" fill="#8b949e" text-anchor="end">Credenciales:</text></svg>
+</style></defs><text class="t" x="119" y="22" font-size="13" font-weight="700" fill="#93a4bf" text-anchor="end">Credenciales:</text></svg>
