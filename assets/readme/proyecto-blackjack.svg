@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 340" width="490" height="340" role="img" aria-label="BlackJack Royale, en vivo: Casino web con BlackJack contra la máquina, multijugador en tiempo real y banco de fichas. 6 módulos de JavaScript y un servidor de WebSockets. Mi rol: front-end en HTML, CSS y JavaScript, y servidor en Python."><title>BlackJack Royale — Casino web con BlackJack contra la máquina, multijugador en tiempo real y banco de fichas.</title><defs><style>
+.t{font-family:'Courier New',Consolas,'Liberation Mono',monospace}
+.s{animation:tw 3s steps(2,end) infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.f{animation:flt 3.2s ease-in-out infinite}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.b{animation:rip 2.6s ease-in-out infinite}
+@keyframes rip{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.s,.f,.b,.cur{animation:none}}
+</style></defs><polygon points="4,0 486,0 486,4 490,4 490,336 486,336 486,340 4,340 4,336 0,336 0,4 4,4" fill="#4a2c7a"/>
+<polygon points="6,2 484,2 484,6 488,6 488,334 484,334 484,338 6,338 6,334 2,334 2,6 6,6" fill="#221338"/>
+<rect x="2" y="2" width="486" height="6" fill="#ff8fb8" opacity=".85"/>
+<polygon points="22,22 80,22 80,24 82,24 82,42 80,42 80,44 22,44 22,42 20,42 20,24 22,24" fill="#7ee08a"/>
+<polygon points="24,24 78,24 78,26 80,26 80,40 78,40 78,42 24,42 24,40 22,40 22,26 24,26" fill="#2b1848"/>
+<text class="t" x="28" y="37" font-size="11" font-weight="700" fill="#7ee08a" text-anchor="start">EN VIVO</text>
+<text class="t" x="470" y="37" font-size="12" font-weight="400" fill="#b7a9d6" text-anchor="end">2025 · equipo</text>
+<rect x="20" y="62" width="20" height="4" fill="#fff1e6"/>
+<rect x="20" y="66" width="4" height="4" fill="#fff1e6"/>
+<rect x="24" y="66" width="4" height="4" fill="#ff8fb8"/>
+<rect x="28" y="66" width="12" height="4" fill="#fff1e6"/>
+<rect x="20" y="70" width="12" height="4" fill="#fff1e6"/>
+<rect x="32" y="70" width="4" height="4" fill="#ff8fb8"/>
+<rect x="36" y="70" width="16" height="4" fill="#fff1e6"/>
+<rect x="20" y="74" width="20" height="4" fill="#fff1e6"/>
+<rect x="40" y="74" width="4" height="4" fill="#ff8fb8"/>
+<rect x="44" y="74" width="8" height="4" fill="#fff1e6"/>
+<rect x="20" y="78" width="4" height="4" fill="#fff1e6"/>
+<rect x="24" y="78" width="4" height="4" fill="#ff8fb8"/>
+<rect x="28" y="78" width="24" height="4" fill="#fff1e6"/>
+<rect x="20" y="82" width="24" height="4" fill="#fff1e6"/>
+<rect x="44" y="82" width="4" height="4" fill="#ff8fb8"/>
+<rect x="48" y="82" width="4" height="4" fill="#fff1e6"/>
+<rect x="32" y="86" width="20" height="4" fill="#fff1e6"/>
+<text class="t" x="62" y="88" font-size="26" font-weight="700" fill="#fff1e6" text-anchor="start">BlackJack Royale</text>
+<text class="t" x="20" y="120" font-size="14" font-weight="400" fill="#e3d7ff" text-anchor="start">Casino web con BlackJack contra la máquina,</text>
+<text class="t" x="20" y="140" font-size="14" font-weight="400" fill="#e3d7ff" text-anchor="start">multijugador en tiempo real y banco de fichas.</text>
+<text class="t" x="20" y="206" font-size="40" font-weight="700" fill="#ffe066" text-anchor="start">6</text>
+<text class="t" x="56.0" y="194" font-size="14" font-weight="700" fill="#fff1e6" text-anchor="start">módulos de JavaScript y un servidor de WebSockets</text>
+<text class="t" x="20" y="230" font-size="14" fill="#e3d7ff"><tspan fill="#ff8fb8" font-weight="700">Mi rol:</tspan> front-end en HTML, CSS y JavaScript, y</text>
+<text class="t" x="20" y="250" font-size="14" font-weight="400" fill="#e3d7ff" text-anchor="start">servidor en Python.</text>
+<rect x="20" y="300" width="40" height="22" fill="#2b1848"/>
+<rect x="20" y="320" width="40" height="2" fill="#7dd3fc" opacity=".6"/>
+<text class="t" x="27" y="315" font-size="11" font-weight="700" fill="#7dd3fc" text-anchor="start">HTML</text>
+<rect x="66" y="300" width="33" height="22" fill="#2b1848"/>
+<rect x="66" y="320" width="33" height="2" fill="#7dd3fc" opacity=".6"/>
+<text class="t" x="73" y="315" font-size="11" font-weight="700" fill="#7dd3fc" text-anchor="start">CSS</text>
+<rect x="105" y="300" width="80" height="22" fill="#2b1848"/>
+<rect x="105" y="320" width="80" height="2" fill="#7dd3fc" opacity=".6"/>
+<text class="t" x="112" y="315" font-size="11" font-weight="700" fill="#7dd3fc" text-anchor="start">JavaScript</text>
+<rect x="191" y="300" width="53" height="22" fill="#2b1848"/>
+<rect x="191" y="320" width="53" height="2" fill="#7dd3fc" opacity=".6"/>
+<text class="t" x="198" y="315" font-size="11" font-weight="700" fill="#7dd3fc" text-anchor="start">Python</text></svg>

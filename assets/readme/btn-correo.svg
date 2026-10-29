@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 44" width="124" height="44" role="img" aria-label="Correo"><title>Correo</title><defs><style>
+.t{font-family:'Courier New',Consolas,'Liberation Mono',monospace}
+.s{animation:tw 3s steps(2,end) infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.f{animation:flt 3.2s ease-in-out infinite}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.b{animation:rip 2.6s ease-in-out infinite}
+@keyframes rip{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.s,.f,.b,.cur{animation:none}}
+</style></defs><polygon points="4,0 120,0 120,4 124,4 124,40 120,40 120,44 4,44 4,40 0,40 0,4 4,4" fill="#7dd3fc"/>
+<polygon points="6,2 118,2 118,6 122,6 122,38 118,38 118,42 6,42 6,38 2,38 2,6 6,6" fill="#2b1848"/>
+<rect x="16" y="15" width="21" height="3" fill="#7dd3fc"/>
+<rect x="16" y="18" width="3" height="3" fill="#7dd3fc"/>
+<rect x="19" y="18" width="3" height="3" fill="#1c1033"/>
+<rect x="22" y="18" width="9" height="3" fill="#7dd3fc"/>
+<rect x="31" y="18" width="3" height="3" fill="#1c1033"/>
+<rect x="34" y="18" width="3" height="3" fill="#7dd3fc"/>
+<rect x="16" y="21" width="6" height="3" fill="#7dd3fc"/>
+<rect x="22" y="21" width="3" height="3" fill="#1c1033"/>
+<rect x="25" y="21" width="3" height="3" fill="#7dd3fc"/>
+<rect x="28" y="21" width="3" height="3" fill="#1c1033"/>
+<rect x="31" y="21" width="6" height="3" fill="#7dd3fc"/>
+<rect x="16" y="24" width="9" height="3" fill="#7dd3fc"/>
+<rect x="25" y="24" width="3" height="3" fill="#1c1033"/>
+<rect x="28" y="24" width="9" height="3" fill="#7dd3fc"/>
+<rect x="16" y="27" width="21" height="3" fill="#7dd3fc"/>
+<text class="t" x="48" y="28" font-size="15" font-weight="700" fill="#fff1e6" text-anchor="start">Correo</text></svg>

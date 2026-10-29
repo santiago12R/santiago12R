@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    paths: ["tools/contribuciones.py", ".github/workflows/contribuciones.yml"]
 
 permissions:
   contents: write
@@ -15,13 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Generar la gráfica
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake.svg?color_snake=#d9568a&color_dots=#ebedf0,#e9d5ff,#c4a1f0,#9b6bd6,#6b3fa0
-            dist/snake-dark.svg?palette=github-dark&color_snake=#ff8fb8&color_dots=#2a1245,#4a2c7a,#7b3fa0,#c05cc0,#ff8fb8
+      - uses: actions/checkout@v4
+
+      - name: Dibujar la pared de mina con las contribuciones
+        run: python3 tools/contribuciones.py "${{ github.repository_owner }}" dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publicar en la rama output
         uses: crazy-max/ghaction-github-pages@v4

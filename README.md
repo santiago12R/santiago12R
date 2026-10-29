@@ -1,147 +1,46 @@
-<!-- 1 · Encabezado -->
-<p align="center">
-  <img src="./banner.svg" width="100%" alt="Banner animado: Santiago Rodríguez Jiménez, Ingeniería de Software, Full Stack y Datos. Un minero en pixel art pica un bloque de mineral junto a una letra S hecha de bloques." />
-</p>
-
-<h3 align="center">Santiago Rodríguez Jiménez</h3>
+<picture><source media="(max-width: 700px)" srcset="assets/readme/movil/portada.svg"><img src="assets/readme/portada.svg" width="100%" alt="Santiago Rodríguez Jiménez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. Escena pixel art de un minero que pica un bloque de mineral."></picture>
 
 <p align="center">
-  Ingeniería de Software · 7.º semestre<br />
-  Universidad Cooperativa de Colombia · Medellín<br />
-  Full Stack y Analítica de Datos
+  <a href="https://github.com/santiago12R/santiago12R/raw/main/Santiago_Rodriguez_CV.pdf"><img src="assets/readme/btn-cv.svg" height="44" alt="Hoja de vida (PDF)"></a>
+  <a href="mailto:santiago.rodriguezj12@gmail.com"><img src="assets/readme/btn-correo.svg" height="44" alt="Correo"></a>
+</p>
+
+Estudiante de Ingeniería de Software (VII semestre) en la Universidad Cooperativa de Colombia, Medellín. Construyo **sitios web con HTML, CSS, JavaScript y React**, **apps móviles con Flutter** y **backends con Java, Spring Boot y Python**, siempre en equipo. Busco mi **práctica empresarial en desarrollo full stack o analítica de datos**.
+
+<p>
+  <a href="https://casarendon.com"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/proyecto-casa-rendon.svg"><img src="assets/readme/proyecto-casa-rendon.svg" width="49%" alt="Casa Rendón, cliente real en vivo: sitio web de una marca de café y vino de Andes, Antioquia, con 7 secciones y reservas por WhatsApp. Mi rol: HTML, CSS, JavaScript y componentes en React."></picture></a>
+  <a href="https://github.com/geminitodo5-sketch/app-educativa-medellin"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/proyecto-numi.svg"><img src="assets/readme/proyecto-numi.svg" width="49%" alt="Numi, en desarrollo: app educativa en Flutter para niños de zonas rurales de Medellín, con 15 actividades en 5 materias y funcionamiento sin internet. Mi rol: pantallas y diseño responsive."></picture></a>
+  <a href="https://luism7p7.github.io/BlackJack/Casino/public/"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/proyecto-blackjack.svg"><img src="assets/readme/proyecto-blackjack.svg" width="49%" alt="BlackJack Royale, en vivo: casino web con modo contra la máquina y multijugador por WebSockets, 6 módulos de JavaScript y servidor en Python. Mi rol: front-end y servidor."></picture></a>
+  <a href="https://github.com/AlexanderM-Code/CineX-Backend"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/proyecto-cinex.svg"><img src="assets/readme/proyecto-cinex.svg" width="49%" alt="CineX, académico: API REST en Java con Spring Boot y MySQL para gestionar un cine, con 8 clases de servicio. Mi rol: capa de servicios con la lógica de negocio."></picture></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/●_Disponible_para-pr%C3%A1ctica_empresarial-2ea44f?style=flat-square&labelColor=1c1033" alt="Disponible para práctica empresarial" />
+  <img src="assets/readme/chip-codigo.svg" height="34" alt="Código:">
+  <a href="https://github.com/AlexanderM-Code/Entre-sorbos---Casa-Rendon"><img src="assets/readme/chip-casa-rendon.svg" height="34" alt="Código de Casa Rendón"></a>
+  <a href="https://github.com/geminitodo5-sketch/app-educativa-medellin"><img src="assets/readme/chip-numi.svg" height="34" alt="Código de Numi"></a>
+  <a href="https://github.com/luism7p7/BlackJack"><img src="assets/readme/chip-blackjack.svg" height="34" alt="Código de BlackJack, proyecto en equipo"></a>
+  <a href="https://github.com/AlexanderM-Code/CineX-Backend"><img src="assets/readme/chip-cinex.svg" height="34" alt="Código del backend de CineX"></a>
+  <br>
+  <a href="https://github.com/santiago12R/Computacion-ubicua"><img src="assets/readme/chip-ubicua.svg" height="34" alt="Código de Computación Ubicua: robot y sensores"></a>
+  <a href="https://github.com/santiago12R/examen1"><img src="assets/readme/chip-poo-java.svg" height="34" alt="Código de POO en Java"></a>
+  <a href="https://github.com/santiago12R/estructura-datos"><img src="assets/readme/chip-estructuras.svg" height="34" alt="Código de estructuras de datos en Python"></a>
 </p>
 
-<!-- 2 · Botones -->
+<picture><source media="(max-width: 700px)" srcset="assets/readme/movil/trayectoria.svg"><img src="assets/readme/trayectoria.svg" width="100%" alt="Trayectoria: 2023 ingreso a Ingeniería de Software en la Universidad Cooperativa; 2024 estructuras de datos en Python; 2025 BlackJack, CineX y Computación Ubicua; 2026 Numi y Casa Rendón con cliente real. Siguiente: práctica empresarial. 2027: fin de la carrera, previsto."></picture>
+
+<picture><source media="(max-width: 700px)" srcset="assets/readme/movil/stack.svg"><img src="assets/readme/stack.svg" width="100%" alt="Stack: HTML y CSS, JavaScript y React en Casa Rendón y BlackJack; Bootstrap, Java, Spring Boot y MySQL en CineX; Flutter y Dart en Numi; Python en BlackJack y estructuras de datos; Git, GitHub y VS Code en todos los proyectos; Postman y Docker, académicos."></picture>
+
 <p align="center">
-  <a href="https://github.com/santiago12R/santiago12R/raw/main/Santiago_Rodriguez_CV.pdf"><img src="https://img.shields.io/badge/Hoja_de_vida-PDF-ff8fb8?style=for-the-badge&labelColor=1c1033&logo=adobeacrobatreader&logoColor=ff8fb8" alt="Descargar hoja de vida en PDF" /></a>
-  <a href="mailto:santiago.rodriguezj12@gmail.com"><img src="https://img.shields.io/badge/Correo-Escr%C3%ADbeme-7dd3fc?style=for-the-badge&labelColor=1c1033&logo=gmail&logoColor=7dd3fc" alt="Enviar un correo a santiago.rodriguezj12@gmail.com" /></a>
+  <img src="assets/readme/chip-credenciales.svg" height="34" alt="Credenciales:">
+  <a href="https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23162887"><img src="assets/readme/chip-cred-fundamentals.svg" height="34" alt="Credencial: Cloud Computing Fundamentals"></a>
+  <a href="https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23588126"><img src="assets/readme/chip-cred-infra.svg" height="34" alt="Credencial: Infrastructure in Google Cloud"></a>
+  <a href="https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23233254"><img src="assets/readme/chip-cred-balancing.svg" height="34" alt="Credencial: Cloud Load Balancing"></a>
+  <a href="https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23629566"><img src="assets/readme/chip-cred-appdev.svg" height="34" alt="Credencial: App Dev Environment"></a>
 </p>
-
-<!-- 3 · Sobre mí -->
-Construyo aplicaciones web y móviles en equipo: interfaces con HTML, CSS, JavaScript y React, apps en Flutter y backends en Java con Spring Boot y en Python.
-Busco una práctica empresarial en desarrollo full stack o analítica de datos.
-
----
-
-### Proyectos destacados
-
-#### Casa Rendón
-`Cliente real` `En vivo` · 2026 · Equipo
-
-Sitio web de una marca familiar de café y vino de Andes, Antioquia: historia, catálogo y reservas de visitas.
-
-- **Cifra:** 7 secciones; reservas y reseñas llegan directo a WhatsApp.
-- **Mi rol:** maquetación en HTML y CSS, interacciones en JavaScript y componentes en React.
-- **Stack:** HTML · CSS · JavaScript · React
-
-[Ver sitio](https://casarendon.com) · [Código](https://github.com/AlexanderM-Code/Entre-sorbos---Casa-Rendon)
-
-#### Numi
-`En desarrollo` · 2026 · Equipo de 4
-
-App educativa en Flutter para niños de 1.° a 5.° de primaria en zonas rurales de Medellín. Funciona sin internet.
-
-- **Cifra:** 5 materias y 15 actividades interactivas, con un asistente de IA que corre en el celular.
-- **Mi rol:** pantallas de la app y ajustes de diseño responsive.
-- **Stack:** Flutter · Dart
-
-[Código](https://github.com/geminitodo5-sketch/app-educativa-medellin)
-
-#### BlackJack Royale
-`En vivo` · 2025 · Equipo
-
-Casino web con BlackJack contra la máquina, multijugador en tiempo real y banco de fichas.
-
-- **Cifra:** 6 módulos de JavaScript y un servidor de WebSockets en Python.
-- **Mi rol:** front-end en HTML, CSS y JavaScript, y servidor multijugador en Python.
-- **Stack:** HTML · CSS · JavaScript · Python
-
-[Jugar](https://luism7p7.github.io/BlackJack/Casino/public/) · [Código](https://github.com/luism7p7/BlackJack)
-
-#### CineX
-`Académico` · 2025 · Equipo
-
-Sistema para gestionar un cine: películas, salas, funciones y reservas.
-
-- **Cifra:** API REST con 4 entidades, 4 controladores y 8 clases de servicio.
-- **Mi rol:** capa de servicios con la lógica de negocio.
-- **Stack:** Java · Spring Boot · MySQL · Bootstrap
-
-[Código del backend](https://github.com/AlexanderM-Code/CineX-Backend)
-
-**Otros proyectos:**
-[Computación Ubicua](https://github.com/santiago12R/Computacion-ubicua) ·
-[POO en Java](https://github.com/santiago12R/examen1) ·
-[Estructuras de datos](https://github.com/santiago12R/estructura-datos)
-
----
-
-### Trayectoria
-
-```txt
-2023  ●  Ingreso a Ingeniería de Software
-      │  Universidad Cooperativa de Colombia
-      │
-2024  ●  Estructuras de datos en Python
-      │
-2025  ●  BlackJack Royale · CineX
-      │  Computación Ubicua: robot y sensores
-      │
-2026  ●  Numi · Casa Rendón (cliente real)
-      │
- →    ○  Siguiente: práctica empresarial
-      │
-2027  ○  Fin de la carrera (previsto)
-```
-
----
-
-### Stack
-
-| Herramienta | Para qué la uso | Proyecto |
-| :-- | :-- | :-- |
-| HTML y CSS | Estructura y estilos | Casa Rendón, BlackJack |
-| JavaScript | Lógica en el navegador | Casa Rendón, BlackJack |
-| React | Componentes de interfaz | Casa Rendón |
-| Bootstrap | Diseño responsive | CineX (frontend) |
-| Flutter y Dart | Apps móviles | Numi |
-| Java | Programación orientada a objetos | CineX, POO en Java |
-| Spring Boot | APIs REST | CineX |
-| Python | Servidores y scripts | BlackJack, Estructuras de datos |
-| MySQL | Base de datos relacional | CineX |
-| Git y GitHub | Trabajo en equipo | Todos |
-| VS Code | Editor | Todos |
-| Postman | Probar APIs | Académico |
-| Docker | Contenedores | Académico |
-
----
-
-### Credenciales
-
-Insignias verificables de Google Cloud en Google Skills:
-
-- [Google Cloud Computing Foundations: Cloud Computing Fundamentals](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23162887)
-- [Google Cloud Computing Foundations: Infrastructure in Google Cloud](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23588126)
-- [Implementing Cloud Load Balancing for Compute Engine](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23233254)
-- [Set Up an App Dev Environment on Google Cloud](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23629566)
-
----
-
-### Contribuciones
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/santiago12R/santiago12R/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/santiago12R/santiago12R/output/snake.svg" />
-  <img src="https://raw.githubusercontent.com/santiago12R/santiago12R/output/snake-dark.svg" width="100%" alt="Gráfica de contribuciones de santiago12R del último año, animada como una serpiente que recorre los días con actividad" />
+  <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones-movil.svg">
+  <img src="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones.svg" width="100%" alt="Mis contribuciones del último año en GitHub dibujadas como una pared de mina: cada bloque es un día; piedra si no hubo actividad y mineral o gema según la cantidad de commits. Se actualiza todos los días.">
 </picture>
 
----
-
-<p align="center">
-  ¿Tienes una vacante de práctica o un proyecto? Escríbeme.<br />
-  <a href="mailto:santiago.rodriguezj12@gmail.com">santiago.rodriguezj12@gmail.com</a>
-</p>
+<a href="mailto:santiago.rodriguezj12@gmail.com"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/cierre.svg"><img src="assets/readme/cierre.svg" width="100%" alt="¿Tu equipo necesita un practicante? Full stack o analítica de datos, disponible para práctica empresarial. santiago.rodriguezj12@gmail.com"></picture></a>

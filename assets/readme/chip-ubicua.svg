@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186 34" width="186" height="34" role="img" aria-label="Código de Computación Ubicua: robot y sensores"><title>Computación Ubicua</title><defs><style>
+.t{font-family:'Courier New',Consolas,'Liberation Mono',monospace}
+.s{animation:tw 3s steps(2,end) infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.f{animation:flt 3.2s ease-in-out infinite}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.b{animation:rip 2.6s ease-in-out infinite}
+@keyframes rip{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.cur{animation:cur 1s steps(1) infinite}
+@keyframes cur{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.s,.f,.b,.cur{animation:none}}
+</style></defs><polygon points="4,0 182,0 182,4 186,4 186,30 182,30 182,34 4,34 4,30 0,30 0,4 4,4" fill="#5ee6e0"/>
+<polygon points="6,2 180,2 180,6 184,6 184,28 180,28 180,32 6,32 6,28 2,28 2,6 6,6" fill="#221338"/>
+<rect x="13" y="12" width="8" height="2" fill="#e6ecf5"/>
+<rect x="19" y="14" width="2" height="2" fill="#e6ecf5"/>
+<rect x="17" y="16" width="2" height="2" fill="#b07a43"/>
+<rect x="21" y="16" width="2" height="2" fill="#e6ecf5"/>
+<rect x="15" y="18" width="2" height="2" fill="#b07a43"/>
+<rect x="13" y="20" width="2" height="2" fill="#b07a43"/>
+<text class="t" x="34" y="22" font-size="13" font-weight="700" fill="#fff1e6" text-anchor="start">Computación Ubicua</text></svg>
