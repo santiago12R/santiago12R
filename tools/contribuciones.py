@@ -13,11 +13,11 @@ import sys
 import urllib.request
 from datetime import date
 
-FUENTE = "'Courier New',Consolas,'Liberation Mono',monospace"
+from fuente import FUENTE, font_face
 NIVELES = {
     "NONE": None,
     "FIRST_QUARTILE": ("#2d5a9e", "#4a7cc4"),
-    "SECOND_QUARTILE": ("#d1599a", "#ff8fb8"),
+    "SECOND_QUARTILE": ("#7c5fd6", "#a78bfa"),
     "THIRD_QUARTILE": ("#e8b830", "#ffe066"),
     "FOURTH_QUARTILE": ("#2fc4c0", "#5ee6e0"),
 }
@@ -65,7 +65,7 @@ def dibujar(total, semanas, ancho, bloque, gap, margen, movil):
     add = o.append
     add(f'<rect width="{ancho}" height="{H}" fill="url(#bg)"/>')
     add(f'<text x="{margen}" y="38" font-family="{FUENTE}" font-size="18" font-weight="700" fill="#f5f1ea">CONTRIBUCIONES</text>')
-    add(f'<rect x="{margen}" y="46" width="160" height="3" fill="#ff8fb8"/>')
+    add(f'<rect x="{margen}" y="46" width="160" height="3" fill="#a78bfa"/>')
     periodo = "en los últimos 6 meses" if movil else "en el último año"
     suma = sum(d["contributionCount"] for s in semanas for d in s["contributionDays"]) if movil else total
     if movil:
@@ -118,7 +118,7 @@ def dibujar(total, semanas, ancho, bloque, gap, margen, movil):
            f'aria-label="{alt}"><title>Contribuciones de santiago12R</title><defs>'
            f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06090f"/>'
            f'<stop offset=".6" stop-color="#0b1120"/><stop offset="1" stop-color="#0f1729"/></linearGradient>'
-           f'<style>.s{{animation:tw 2.4s steps(2,end) infinite}}@keyframes tw{{0%,100%{{opacity:.1}}50%{{opacity:1}}}}'
+           f'<style>{font_face()}.s{{animation:tw 2.4s steps(2,end) infinite}}@keyframes tw{{0%,100%{{opacity:.1}}50%{{opacity:1}}}}'
            f'@media (prefers-reduced-motion:reduce){{.s{{animation:none}}}}</style></defs>')
     return cab + "".join(o) + "</svg>\n"
 

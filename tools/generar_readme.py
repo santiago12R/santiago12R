@@ -16,11 +16,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # ------------------------------------------------------------------ paleta
 BG0, BG1, BG2 = "#06090f", "#0b1120", "#0f1729"
 PANEL, PANEL2, BORDE = "#0e1525", "#141d33", "#2a3b5f"
-CREMA, ROSA, CIAN, GEMA, AMAR, VERDE, GRIS = "#f5f1ea", "#ff8fb8", "#7dd3fc", "#5ee6e0", "#ffe066", "#7ee08a", "#93a4bf"
-FUENTE = "'Courier New',Consolas,'Liberation Mono',monospace"
+CREMA, ROSA, CIAN, GEMA, AMAR, VERDE, GRIS = "#f5f1ea", "#a78bfa", "#7dd3fc", "#5ee6e0", "#ffe066", "#7ee08a", "#93a4bf"
+from fuente import FUENTE, font_face  # noqa: E402
 P = 4
 
-ESTILO_BASE = f"""
+ESTILO_BASE = font_face() + f"""
 .t{{font-family:{FUENTE}}}
 .s{{animation:tw 3s steps(2,end) infinite}}
 @keyframes tw{{0%,100%{{opacity:.15}}50%{{opacity:.9}}}}
@@ -350,7 +350,7 @@ def portada_movil():
     nubes(L, [(220, 24)])
     luna(L, 350, 22)
     L.add('<g transform="translate(-28,-14) scale(.62)">' + open(os.path.join(HERE, "s_letra.svgfrag")).read() + '</g>')
-    for x, y, c1, c2, c3 in [(300, 90, "#7dd3fc", "#2f8fc4", "#1f6a94"), (250, 130, "#ffe066", "#c9a21c", "#8f7310"), (370, 120, "#ff8fb8", "#c93d85", "#8e2660")]:
+    for x, y, c1, c2, c3 in [(300, 90, "#7dd3fc", "#2f8fc4", "#1f6a94"), (250, 130, "#ffe066", "#c9a21c", "#8f7310"), (370, 120, "#a78bfa", "#7c5fd6", "#5b3fb0")]:
         L.add(f'<g class="f"><polygon points="{x - 7},{y + 4} {x},{y + 8} {x},{y + 16} {x - 7},{y + 12}" fill="{c2}"/><polygon points="{x + 7},{y + 4} {x},{y + 8} {x},{y + 16} {x + 7},{y + 12}" fill="{c3}"/><polygon points="{x},{y} {x + 7},{y + 4} {x},{y + 8} {x - 7},{y + 4}" fill="{c1}"/></g>')
     L.add(f'<g clip-path="url(#type)"><text class="t" x="24" y="196" font-size="30" font-weight="700" fill="{CREMA}" letter-spacing="-1">Santiago</text>'
           f'<text class="t" x="24" y="232" font-size="30" font-weight="700" fill="{CREMA}" letter-spacing="-1">Rodríguez Jiménez</text></g>')
