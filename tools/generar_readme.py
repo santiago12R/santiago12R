@@ -507,40 +507,151 @@ def bloque_hito(L, x, y, color, lleno):
         L.add(f'<rect x="{x + 1}" y="{y + 1}" width="18" height="18" fill="none" stroke="{color}" stroke-width="2" stroke-dasharray="4 2"/>')
 
 
+# ---- vagón y rieles
+VAGON = [
+    "SSSSSSSSSSSSSSSS",
+    "sGGGGGGGGGGGGGGs",
+    "sGRGGGGGGGGGGRGs",
+    "sGGGGGGGGGGGGGGs",
+    "sGGGgggggggggGGs",
+    "sGRGGGGGGGGGGRGs",
+    ".sGGGGGGGGGGGGs.",
+    "..ssssssssssss..",
+]
+PAL_VAGON = {"S": "#d6dce6", "s": "#4e5568", "G": "#7d8597", "g": "#6a7284", "R": "#e6ecf5"}
+RUEDA_A = ["KKK", "KWK", "KKK"]
+RUEDA_B = ["KWK", "WKW", "KWK"]
+PAL_RUEDA = {"K": "#2a2f3c", "W": "#9aa7b8"}
+PASAJERO = MINERO[:10]  # casco, cara, barba y hombros; el resto queda dentro del vagón
+
+MOVER, PARAR = 1.1, 1.5  # segundos en movimiento y detenido en cada estación
+
+
+def tiempos_viaje(n):
+    """Devuelve (duración total, lista de (llegada, salida)) en fracciones de 0 a 1."""
+    total = n * (MOVER + PARAR) + 0.8
+    marcas, t = [], 0.0
+    for i in range(n):
+        if i > 0:
+            t += MOVER
+        marcas.append((t / total, (t + PARAR) / total))
+        t += PARAR
+    return total, marcas
+
+
+def css_viaje(n, eje, paso):
+    total, marcas = tiempos_viaje(n)
+    k = []
+    for i, (a, b) in enumerate(marcas):
+        d = i * paso
+        tr = f"translate({d}px,0)" if eje == "x" else f"translate(0,{d}px)"
+        k.append(f"{a * 100:.2f}%{{transform:{tr};opacity:1}}")
+        k.append(f"{b * 100:.2f}%{{transform:{tr};opacity:1}}")
+    fin = (n - 1) * paso
+    tr = f"translate({fin}px,0)" if eje == "x" else f"translate(0,{fin}px)"
+    salida = marcas[-1][1] * 100
+    k.append(f"{min(99.5, salida + 3):.2f}%{{transform:{tr};opacity:0}}")
+    k.append(f"100%{{transform:{'translate(0,0)'};opacity:0}}")
+    css = f".viaje{{animation:viaje {total:.1f}s linear infinite}}@keyframes viaje{{{''.join(k)}}}"
+    for i, (a, b) in enumerate(marcas):
+        css += (f".luz{i}{{opacity:0;animation:luz{i} {total:.1f}s steps(1) infinite}}"
+                f"@keyframes luz{i}{{0%{{opacity:0}}{a * 100:.2f}%{{opacity:1}}{b * 100:.2f}%{{opacity:0}}100%{{opacity:0}}}}")
+    css += (".rA{animation:rA .3s steps(1) infinite}.rB{animation:rB .3s steps(1) infinite}"
+            "@keyframes rA{0%{opacity:1}50%{opacity:0}}@keyframes rB{0%{opacity:0}50%{opacity:1}}"
+            ".saludo{transform-box:fill-box;transform-origin:50% 100%;animation:sal 1s ease-in-out infinite}"
+            "@keyframes sal{0%,100%{transform:rotate(-12deg)}50%{transform:rotate(18deg)}}"
+            "@media (prefers-reduced-motion:reduce){.viaje,.saludo,.rA,.rB{animation:none}"
+            + "".join(f".luz{i}" + ("," if i < n - 1 else "") for i in range(n)) + "{animation:none;opacity:0}}")
+    return css
+
+
+def vagon_lateral(L, cx, base):
+    """Vagón visto de lado con el minero adentro; cx = centro, base = altura del riel."""
+    x = cx - 32
+    y = base - 38
+    L.add('<g class="viaje">')
+    L.sprite(x + 6, y - 38, PASAJERO, PAL_MINERO, 4)
+    L.add(f'<g class="saludo"><rect x="{x + 46}" y="{y - 14}" width="6" height="16" fill="#3b4256"/>'
+          f'<rect x="{x + 45}" y="{y - 21}" width="8" height="8" fill="#8a6a4a"/></g>')
+    L.sprite(x, y, VAGON, PAL_VAGON, 4)
+    for wx in (x + 8, x + 44):
+        L.add('<g class="rA">')
+        L.sprite(wx, base - 9, RUEDA_A, PAL_RUEDA, 4)
+        L.add('</g><g class="rB">')
+        L.sprite(wx, base - 9, RUEDA_B, PAL_RUEDA, 4)
+        L.add('</g>')
+    L.add('</g>')
+
+
+def rieles_h(L, x0, x1, y):
+    for x in range(x0, x1, 16):
+        L.px(x, y + 2, "#6b4428", 8, 8)
+        L.px(x, y + 2, "#8b5a2b", 8, 2)
+    L.add(f'<rect x="{x0}" y="{y - 2}" width="{x1 - x0}" height="4" fill="#9aa7b8"/>')
+    L.add(f'<rect x="{x0}" y="{y - 2}" width="{x1 - x0}" height="1" fill="#e6ecf5"/>')
+    L.add(f'<rect x="{x0}" y="{y + 2}" width="{x1 - x0}" height="1" fill="#4e5568"/>')
+
+
 def trayectoria():
-    L = Lienzo(1000, 220, "Trayectoria")
-    L.fondo(14, 9, evitar=[(0, 40, 1000, 220)])
-    L.texto(32, 44, "TRAYECTORIA", 18, CREMA, 700)
-    L.add(f'<rect x="32" y="52" width="150" height="3" fill="{ROSA}"/>')
-    y0 = 100
-    x0, x1 = 92, 908
+    W, H = 1000, 260
+    L = Lienzo(W, H, "Trayectoria")
+    L.fondo(14, 9, evitar=[(0, 30, W, H)])
+    L.texto(32, 40, "TRAYECTORIA", 18, CREMA, 700)
+    L.add(f'<rect x="32" y="48" width="150" height="3" fill="{ROSA}"/>')
+    x0, x1, riel = 92, 908, 176
     paso = (x1 - x0) / (len(HITOS) - 1)
-    L.add(f'<rect x="{x0}" y="{y0 + 8}" width="{paso * 3:.0f}" height="4" fill="{BORDE}"/>')
-    L.add(f'<rect x="{x0 + paso * 3:.0f}" y="{y0 + 8}" width="{paso * 2:.0f}" height="4" fill="{BORDE}" opacity=".5"/>')
+    L.css = css_viaje(len(HITOS), "x", round(paso, 2))
+    rieles_h(L, 24, W - 24, riel)
     for i, (anio, lineas, color, lleno) in enumerate(HITOS):
         x = x0 + i * paso
-        bloque_hito(L, x - 10, y0, color, lleno)
-        anc, xt = "middle", x
-        L.texto(xt, y0 - 12, anio, 15, color, 700, anc)
+        # estación: poste, letrero con el año y luz cuando llega el vagón
+        L.px(x - 1, 92, "#4e5568", 3, riel - 94)
+        L.add(f'<rect class="luz{i}" x="{x - 44}" y="62" width="88" height="34" fill="{color}" opacity="0"/>')
+        L.panel(x - 40, 66, 80, 26, PANEL2, color, 2)
+        L.texto(x, 84, anio, 14, color, 700, "middle")
         for j, ln in enumerate(lineas):
-            L.texto(xt, y0 + 46 + j * 18, ln, 12, CREMA if j == 0 else GRIS, 700 if j == 0 else 400, anc)
+            L.texto(x, riel + 34 + j * 18, ln, 12, CREMA if j == 0 else GRIS, 700 if j == 0 else 400, "middle")
+        if not lleno:
+            L.add(f'<rect x="{x - 40}" y="66" width="80" height="26" fill="{BG0}" opacity=".35"/>')
+    vagon_lateral(L, x0, riel - 2)
     return L.guardar("trayectoria.svg", ALT_TRAY)
 
 
 def trayectoria_movil():
-    L = Lienzo(400, 520, "Trayectoria")
-    L.fondo(10, 9, evitar=[(0, 50, 400, 520)])
+    W = 400
+    paso, y0 = 84, 96
+    H = y0 + paso * (len(HITOS) - 1) + 70
+    L = Lienzo(W, H, "Trayectoria")
+    L.fondo(8, 9, evitar=[(0, 50, W, H)])
     L.texto(24, 40, "TRAYECTORIA", 18, CREMA, 700)
     L.add(f'<rect x="24" y="48" width="150" height="3" fill="{ROSA}"/>')
-    y = 84
-    L.add(f'<rect x="42" y="{y + 10}" width="4" height="{72 * 3}" fill="{BORDE}"/>')
-    L.add(f'<rect x="42" y="{y + 10 + 72 * 3}" width="4" height="{72 * 2}" fill="{BORDE}" opacity=".5"/>')
-    for anio, lineas, color, lleno in HITOS:
-        bloque_hito(L, 34, y, color, lleno)
-        L.texto(70, y + 15, anio, 16, color, 700)
-        for j, ln in enumerate(lineas):
-            L.texto(140, y + 15 + j * 20, ln, 14, CREMA if j == 0 else GRIS, 700 if j == 0 else 400)
-        y += 72
+    L.css = css_viaje(len(HITOS), "y", paso)
+    # vía vertical vista desde arriba
+    for y in range(64, H - 16, 14):
+        L.px(30, y, "#6b4428", 36, 6)
+        L.px(30, y, "#8b5a2b", 36, 2)
+    for rx in (36, 56):
+        L.add(f'<rect x="{rx}" y="60" width="4" height="{H - 76}" fill="#9aa7b8"/>')
+        L.add(f'<rect x="{rx}" y="60" width="1" height="{H - 76}" fill="#e6ecf5"/>')
+    for i, (anio, lineas, color, lleno) in enumerate(HITOS):
+        y = y0 + i * paso
+        L.add(f'<rect class="luz{i}" x="80" y="{y - 22}" width="300" height="56" fill="{color}" opacity="0" style="opacity:0"/>')
+        L.panel(84, y - 18, 292, 48, PANEL if lleno else BG0, color, 2)
+        L.texto(98, y + 2, anio, 15, color, 700)
+        L.texto(166, y + 2, lineas[0], 13, CREMA, 700)
+        if len(lineas) > 1:
+            L.texto(166, y + 20, lineas[1], 12, GRIS)
+    # vagón visto desde arriba con el minero (casco amarillo)
+    cx, cy = 48, y0 + 6
+    L.add('<g class="viaje">')
+    L.px(cx - 18, cy - 20, "#4e5568", 36, 40)
+    L.px(cx - 16, cy - 18, "#c3cad6", 32, 36)
+    L.px(cx - 12, cy - 14, "#7d8597", 24, 28)
+    L.px(cx - 12, cy - 2, "#ff8a3d", 24, 12)
+    L.px(cx - 8, cy - 12, "#f2c230", 16, 14)
+    L.px(cx - 4, cy - 12, "#fff6b0", 8, 4)
+    L.px(cx - 6, cy - 16, "#fff6b0", 4, 4)
+    L.add('</g>')
     return L.guardar("movil/trayectoria.svg", ALT_TRAY)
 
 
