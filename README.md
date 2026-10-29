@@ -1,4 +1,4 @@
-<picture><source media="(max-width: 700px)" srcset="assets/readme/movil/portada.svg"><img src="assets/readme/portada.svg" width="100%" alt="Santiago Rodríguez Jiménez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. Escena pixel art de un minero que pica un bloque de mineral."></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/readme/movil/portada.svg"><img src="assets/readme/portada.svg" width="100%" alt="Santiago Rodríguez Jiménez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial."></picture>
 
 <p align="center">
   <a href="https://github.com/santiago12R/santiago12R/raw/main/Santiago_Rodriguez_CV.pdf"><img src="assets/readme/btn-cv.svg" height="44" alt="Hoja de vida (PDF)"></a>
@@ -40,7 +40,7 @@ Estudiante de Ingeniería de Software (VII semestre) en la Universidad Cooperati
 
 <picture>
   <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones-movil.svg">
-  <img src="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones.svg" width="100%" alt="Mis contribuciones del último año en GitHub dibujadas como una pared de mina: cada bloque es un día; piedra si no hubo actividad y mineral o gema según la cantidad de commits. Se actualiza todos los días.">
+  <img src="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones.svg" width="100%" alt="Mis contribuciones del último año en GitHub: cada cuadrado es un día y el azul más intenso indica más contribuciones. Se actualiza todos los días.">
 </picture>
 
 <a href="mailto:santiago.rodriguezj12@gmail.com"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/cierre.svg"><img src="assets/readme/cierre.svg" width="100%" alt="¿Tu equipo necesita un practicante? Full stack o analítica de datos, disponible para práctica empresarial. santiago.rodriguezj12@gmail.com"></picture></a>
