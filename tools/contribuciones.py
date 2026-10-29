@@ -1,6 +1,6 @@
 """Dibuja las contribuciones de GitHub como el corte de una mina en pixel art.
 
-Arriba, la superficie: el minero recorre la vía en su vagón. Abajo, la roca: cada día del último año es
+Arriba, la superficie: el minero camina hasta el letrero de "hoy" y recoge objetos por el camino. Abajo, la roca: cada día del último año es
 una veta; queda en piedra si no hubo actividad y brilla como mineral o gema según cuántas contribuciones hubo.
 Encima van cuatro cifras: contribuciones, días activos, racha más larga y mejor día.
 
@@ -135,8 +135,48 @@ VAGON = ["SSSSSSSSSSSSSSSS", "sGGGGGGGGGGGGGGs", "sGRGGGGGGGGGGRGs", "sGGGgggggg
 PAL_VAGON = {"S": "#d6dce6", "s": "#4e5568", "G": "#7d8597", "g": "#6a7284", "R": "#e6ecf5"}
 
 
+MINERO_SUP = [
+    "....YYYYY.....",
+    "...YYYYYYYL...",
+    "..yYYYYYYYYYY.",
+    "...HSSSSSS....",
+    "...HSSWES.....",
+    "...SSSSSSs....",
+    "...SBBBBBB....",
+    "....bBBBb.....",
+    "....CSSC......",
+    "..COOOCCOOO...",
+    ".CCOOOCCOOO...",
+    ".CCRRRRRRRR...",
+    ".GCOOOCCOOO...",
+    ".G.oOOCCOOo...",
+    "...KKKKkKKK...",
+]
+PIERNAS_A = ["...PPPPPPPP...", "...PPPp.PPP...", "...PPP..PPP...", "...ppP..Ppp...", "..TTTT..TTTT..", "..tttt..tttt.."]
+PIERNAS_B = ["...PPPPPPPP...", "..PPPp..PPP...", ".PPP.....PPP..", ".ppP......Ppp.", "TTTT......TTTT", "tttt......tttt"]
+PAL_MINERO.update({"o": "#d96a22", "R": "#e9eef5", "G": "#8a6a4a", "K": "#2a2016", "k": "#c9a24a",
+                   "P": "#4b5568", "p": "#363e4f", "T": "#6b4428", "t": "#2a1a10", "c": "#2b3142"})
+OBJETOS = {
+    "gema": ([".G.", "GgG", ".G."], {"G": "#5ee6e0", "g": "#c8fffb"}),
+    "oro": (["..YY", ".YyY", "YYYY"], {"Y": "#e8b830", "y": "#fff1a8"}),
+    "cofre": (["BBBBBB", "BYBBYB", "BBYYBB", "bbbbbb"], {"B": "#8b5a2b", "b": "#5a3a22", "Y": "#ffe066"}),
+    "cristal": (["..V.", ".VvV", ".VVV", "VVVV"], {"V": "#7c5fd6", "v": "#d7c9ff"}),
+    "moneda": ([".YY.", "YyYY", "YYYY", ".YY."], {"Y": "#ffe066", "y": "#fff8d0"}),
+}
+
+
+def dibujar_objeto(s, tipo, x, y_suelo, k):
+    filas, pal = OBJETOS[tipo]
+    alto = len(filas) * 4
+    s.add(f'<g class="o{k}">')
+    s.sprite(x, y_suelo - alto, filas, pal)
+    s.add(f'<rect class="tw" x="{x + len(filas[0]) * 4}" y="{y_suelo - alto - 4}" width="2" height="2" fill="#ffffff"/>')
+    s.add('</g>')
+
+
 def escena(semanas, ancho, bloque, gap, margen, movil, total):
     s = SVG()
+    s.css_extra = ""
     paso = bloque + gap
     activos, racha, mejor = cifras(semanas)
     hoy = date.today()
@@ -178,19 +218,46 @@ def escena(semanas, ancho, bloque, gap, margen, movil, total):
         picos += [(x, y_suelo), (x + 40, y_suelo - alto), (x + 80, y_suelo)]
         x += r.randint(50, 90)
     s.add(f'<polygon points="{" ".join(f"{a},{b}" for a, b in [(0, y_suelo)] + picos + [(ancho, y_suelo)])}" fill="#17223a"/>')
-    # vía
-    for x in range(8, ancho - 8, 16):
-        s.px(x, y_suelo - 4, "#5a3a22", 8, 4)
-    s.px(8, y_suelo - 7, "#9aa7b8", ancho - 16, 3)
-    s.px(8, y_suelo - 7, "#e6ecf5", ancho - 16, 1)
-    # vagón con el minero cruzando
-    vy = y_suelo - 7 - 24
-    s.add('<g class="cruce">')
-    s.sprite(-74, vy - 38, MINERO_CABEZA, PAL_MINERO)
-    s.sprite(-80, vy, VAGON, PAL_VAGON)
-    for wx in (-72, -36):
-        s.add(f'<g class="rA"><rect x="{wx}" y="{vy + 18}" width="12" height="12" fill="#2a2f3c"/><rect x="{wx + 4}" y="{vy + 22}" width="4" height="4" fill="#9aa7b8"/></g>')
+    # camino: el minero camina hasta el letrero de "hoy" y recoge objetos
+    x_ini, x_fin = -70, ancho - margen - 70
+    dur = 20 if not movil else 13
+    caminar = 0.82  # fracción del ciclo en que camina; luego se queda junto al letrero y reaparece
+    objetos = ["gema", "oro", "cofre", "cristal", "moneda"] if not movil else ["gema", "cofre", "cristal"]
+    xs = [int(x_ini + 60 + (x_fin - x_ini - 40) * (k + 1) / (len(objetos) + 1)) for k in range(len(objetos))]
+    css_obj = ""
+    for k, (tipo, ox) in enumerate(zip(objetos, xs)):
+        t = max(1, min(80, (ox - (x_ini + 44)) / (x_fin - x_ini) * caminar * 100))
+        dibujar_objeto(s, tipo, ox, y_suelo, k)
+        css_obj += (f".o{k}{{animation:o{k} {dur}s linear infinite}}"
+                    f"@keyframes o{k}{{0%,{t:.1f}%{{opacity:1;transform:translateY(0)}}{t + 2:.1f}%{{opacity:0;transform:translateY(-14px)}}96%{{opacity:0;transform:translateY(0)}}100%{{opacity:1}}}}"
+                    f".m{k}{{opacity:0;animation:m{k} {dur}s linear infinite}}"
+                    f"@keyframes m{k}{{0%,{t:.1f}%{{opacity:0;transform:translateY(0)}}{t + .5:.1f}%{{opacity:1}}{t + 6:.1f}%{{opacity:0;transform:translateY(-22px)}}100%{{opacity:0}}}}")
+        s.texto(ox + 6, y_suelo - 34, "+1", 12, AMAR, 700, "middle")
+        s.o[-1] = s.o[-1].replace("<text ", f'<text class="m{k}" ', 1)
+    # letrero final
+    lx = x_fin + 66
+    s.px(lx, y_suelo - 30, "#6b4428", 4, 30)
+    s.marco(lx - 20, y_suelo - 52, 44, 24, AMAR, PANEL, 2)
+    s.texto(lx + 2, y_suelo - 35, "HOY", 11, AMAR, 700, "middle")
+    # minero caminando
+    my = y_suelo - 84
+    s.add('<g class="anda">')
+    s.sprite(x_ini, my, MINERO_SUP, PAL_MINERO)
+    s.add('<g class="pA">')
+    s.sprite(x_ini, my + 60, PIERNAS_A, PAL_MINERO)
+    s.add('</g><g class="pB">')
+    s.sprite(x_ini, my + 60, PIERNAS_B, PAL_MINERO)
     s.add('</g>')
+    # pico al hombro
+    s.add(f'<rect x="{x_ini + 2}" y="{my + 22}" width="4" height="40" fill="#8b5a2b" transform="rotate(-35 {x_ini + 4} {my + 42})"/>')
+    s.add(f'<rect x="{x_ini - 14}" y="{my + 18}" width="30" height="5" fill="#9aa7b8" transform="rotate(-35 {x_ini + 4} {my + 42})"/>')
+    s.add('</g>')
+    s.css_extra = (f".anda{{animation:anda {dur}s linear infinite}}"
+                   f"@keyframes anda{{0%{{transform:translateX(0);opacity:1}}{caminar * 100:.0f}%{{transform:translateX({x_fin - x_ini}px);opacity:1}}"
+                   f"95%{{transform:translateX({x_fin - x_ini}px);opacity:1}}98%{{transform:translateX({x_fin - x_ini}px);opacity:0}}100%{{transform:translateX(0);opacity:0}}}}"
+                   ".pA{animation:pA .5s steps(1) infinite}.pB{animation:pB .5s steps(1) infinite}"
+                   "@keyframes pA{0%{opacity:1}50%{opacity:0}}@keyframes pB{0%{opacity:0}50%{opacity:1}}"
+                   + css_obj)
     # pasto, tierra y roca
     s.px(0, y_suelo, "#4fa834", ancho, 6)
     for x in range(0, ancho, 8):
@@ -245,13 +312,11 @@ def escena(semanas, ancho, bloque, gap, margen, movil, total):
             '<pattern id="roca" width="16" height="16" patternUnits="userSpaceOnUse">'
             + "".join(f'<rect x="{a}" y="{b}" width="4" height="4" fill="{ROCA[(a // 4 * 3 + b // 4 * 5) % 4]}"/>' for a in range(0, 16, 4) for b in range(0, 16, 4))
             + '</pattern>')
-    dur = 22 if not movil else 14
     css = (f"{font_face()}text{{font-family:{FUENTE}}}"
            ".tw{animation:tw 2.4s steps(2,end) infinite}@keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}"
-           f".cruce{{animation:cruce {dur}s linear infinite}}@keyframes cruce{{0%{{transform:translateX(0)}}100%{{transform:translateX({ancho + 160}px)}}}}"
-           ".rA{animation:rA .4s steps(2) infinite}@keyframes rA{0%{opacity:1}50%{opacity:.6}}"
+           + s.css_extra +
            ".fl{animation:fl .5s steps(2) infinite}@keyframes fl{0%{transform:translateY(0)}50%{transform:translateY(-2px)}}"
-           "@media (prefers-reduced-motion:reduce){.tw,.cruce,.rA,.fl{animation:none}}")
+           "@media (prefers-reduced-motion:reduce){.tw,.anda,.pA,.fl{animation:none}.pB{opacity:0}}")
     cab = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {ancho} {H}" width="{ancho}" height="{H}" role="img" '
            f'aria-label="{alt}" font-family="{FUENTE}"><title>Contribuciones de santiago12R</title>'
            f'<defs>{defs}<style>{css}</style></defs>'

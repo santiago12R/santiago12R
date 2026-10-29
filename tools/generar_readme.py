@@ -717,8 +717,8 @@ def stack_movil():
 
 
 # ================================================================== cierre
-ALT_CIERRE = ("¿Tu equipo necesita un practicante? Full stack o analítica de datos, disponible para práctica empresarial. "
-              "Escríbeme: santiago.rodriguezj12@gmail.com")
+ALT_CIERRE = ("¿Tu equipo necesita un practicante? Desarrollo de software o análisis de datos. Disponible para nuevos "
+              "retos profesionales. Escríbeme: santiago.rodriguezj12@gmail.com")
 
 
 def entrada_mina(L, x, y, w, h, gy):
@@ -800,8 +800,8 @@ def cierre(movil=False):
         L.o.insert(0, f"<defs>{TUNEL}</defs>")
         L.texto(24, 56, "¿TU EQUIPO NECESITA", 24, CREMA, 700)
         L.texto(24, 90, "UN PRACTICANTE?", 24, CIAN, 700)
-        L.texto(24, 122, "Full stack o analítica de datos.", 13, "#d3dceb")
-        L.texto(24, 142, "Disponible para práctica empresarial.", 13, "#d3dceb")
+        L.texto(24, 122, "Desarrollo de software o análisis de datos.", 13, "#d3dceb")
+        L.texto(24, 142, "Disponible para nuevos retos profesionales.", 13, "#d3dceb")
         L.texto(24, 176, correo, 15, AMAR, 700)
         L.add(f'<rect class="cur" x="{24 + int(ancho_texto(correo, 15)) + 4}" y="164" width="8" height="15" fill="{AMAR}"/>')
         entrada_mina(L, 252, 300, 124, 0, gy)
@@ -820,9 +820,10 @@ def cierre(movil=False):
         L.o.insert(0, f"<defs>{TUNEL}</defs>")
         L.texto(48, 86, "¿TU EQUIPO NECESITA", 34, CREMA, 700)
         L.texto(48, 130, "UN PRACTICANTE?", 34, CIAN, 700)
-        L.texto(48, 168, "Full stack o analítica de datos · disponible para práctica", 15, "#d3dceb")
-        L.texto(48, 206, correo, 18, AMAR, 700)
-        L.add(f'<rect class="cur" x="{48 + int(ancho_texto(correo, 18)) + 6}" y="192" width="9" height="17" fill="{AMAR}"/>')
+        L.texto(48, 166, "Desarrollo de software o análisis de datos.", 15, "#d3dceb")
+        L.texto(48, 188, "Disponible para nuevos retos profesionales.", 15, "#d3dceb")
+        L.texto(48, 224, correo, 18, AMAR, 700)
+        L.add(f'<rect class="cur" x="{48 + int(ancho_texto(correo, 18)) + 6}" y="210" width="9" height="17" fill="{AMAR}"/>')
         entrada_mina(L, 790, 136, 168, 0, gy)
         farol(L, 874, 152)
         cartel(L, 874, 68, "SALIDA", "→ TU EQUIPO", 16)
