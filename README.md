@@ -1,110 +1,147 @@
-<!-- ───────────────────────────── 00 · ENCABEZADO ───────────────────────────── -->
+<!-- 1 · Encabezado -->
+<p align="center">
+  <img src="./banner.svg" width="100%" alt="Banner animado: Santiago Rodríguez Jiménez, Ingeniería de Software, Full Stack y Datos. Un minero en pixel art pica un bloque de mineral junto a una letra S hecha de bloques." />
+</p>
+
+<h3 align="center">Santiago Rodríguez Jiménez</h3>
 
 <p align="center">
-  <img src="./banner.svg" width="100%" alt="Santiago Rodríguez Jiménez — Ingeniería de Software · Backend & Datos" />
+  Ingeniería de Software · 7.º semestre<br />
+  Universidad Cooperativa de Colombia · Medellín<br />
+  Full Stack y Analítica de Datos
 </p>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/●_Disponible-pr%C3%A1ctica_empresarial-2ea44f?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/Ubicaci%C3%B3n-Medell%C3%ADn%2C_Colombia-0d1117?style=flat-square&labelColor=0d1117&color=30363d" />
-  <img src="https://img.shields.io/badge/Modalidad-Presencial_·_H%C3%ADbrida_·_Remota-0d1117?style=flat-square&labelColor=0d1117&color=30363d" />
+<p align="center">
+  <img src="https://img.shields.io/badge/●_Disponible_para-pr%C3%A1ctica_empresarial-2ea44f?style=flat-square&labelColor=1c1033" alt="Disponible para práctica empresarial" />
 </p>
+
+<!-- 2 · Botones -->
+<p align="center">
+  <a href="https://github.com/santiago12R/santiago12R/raw/main/Santiago_Rodriguez_CV.pdf"><img src="https://img.shields.io/badge/Hoja_de_vida-PDF-ff8fb8?style=for-the-badge&labelColor=1c1033&logo=adobeacrobatreader&logoColor=ff8fb8" alt="Descargar hoja de vida en PDF" /></a>
+  <a href="mailto:santiago.rodriguezj12@gmail.com"><img src="https://img.shields.io/badge/Correo-Escr%C3%ADbeme-7dd3fc?style=for-the-badge&labelColor=1c1033&logo=gmail&logoColor=7dd3fc" alt="Enviar un correo a santiago.rodriguezj12@gmail.com" /></a>
+</p>
+
+<!-- 3 · Sobre mí -->
+Construyo aplicaciones web y móviles en equipo: interfaces con HTML, CSS, JavaScript y React, apps en Flutter y backends en Java con Spring Boot y en Python.
+Busco una práctica empresarial en desarrollo full stack o analítica de datos.
 
 ---
 
-### 01 &nbsp;/&nbsp; Quién soy
+### Proyectos destacados
 
-Estudiante de **Ingeniería de Software** en la Universidad Cooperativa de Colombia.  
-Me interesa entender cómo funcionan los sistemas por dentro: desde estructurar datos y escribir lógica en **Python** y **Java**, hasta analizar, desplegar y mantener aplicaciones web.
+#### Casa Rendón
+`Cliente real` `En vivo` · 2026 · Equipo
+
+Sitio web de una marca familiar de café y vino de Andes, Antioquia: historia, catálogo y reservas de visitas.
+
+- **Cifra:** 7 secciones; reservas y reseñas llegan directo a WhatsApp.
+- **Mi rol:** maquetación en HTML y CSS, interacciones en JavaScript y componentes en React.
+- **Stack:** HTML · CSS · JavaScript · React
+
+[Ver sitio](https://casarendon.com) · [Código](https://github.com/AlexanderM-Code/Entre-sorbos---Casa-Rendon)
+
+#### Numi
+`En desarrollo` · 2026 · Equipo de 4
+
+App educativa en Flutter para niños de 1.° a 5.° de primaria en zonas rurales de Medellín. Funciona sin internet.
+
+- **Cifra:** 5 materias y 15 actividades interactivas, con un asistente de IA que corre en el celular.
+- **Mi rol:** pantallas de la app y ajustes de diseño responsive.
+- **Stack:** Flutter · Dart
+
+[Código](https://github.com/geminitodo5-sketch/app-educativa-medellin)
+
+#### BlackJack Royale
+`En vivo` · 2025 · Equipo
+
+Casino web con BlackJack contra la máquina, multijugador en tiempo real y banco de fichas.
+
+- **Cifra:** 6 módulos de JavaScript y un servidor de WebSockets en Python.
+- **Mi rol:** front-end en HTML, CSS y JavaScript, y servidor multijugador en Python.
+- **Stack:** HTML · CSS · JavaScript · Python
+
+[Jugar](https://luism7p7.github.io/BlackJack/Casino/public/) · [Código](https://github.com/luism7p7/BlackJack)
+
+#### CineX
+`Académico` · 2025 · Equipo
+
+Sistema para gestionar un cine: películas, salas, funciones y reservas.
+
+- **Cifra:** API REST con 4 entidades, 4 controladores y 8 clases de servicio.
+- **Mi rol:** capa de servicios con la lógica de negocio.
+- **Stack:** Java · Spring Boot · MySQL · Bootstrap
+
+[Código del backend](https://github.com/AlexanderM-Code/CineX-Backend)
+
+**Otros proyectos:**
+[Computación Ubicua](https://github.com/santiago12R/Computacion-ubicua) ·
+[POO en Java](https://github.com/santiago12R/examen1) ·
+[Estructuras de datos](https://github.com/santiago12R/estructura-datos)
+
+---
+
+### Trayectoria
 
 ```txt
-→ Busco    práctica empresarial donde pueda aportar y aprender en un equipo real
-→ Fuerte   en trabajo colaborativo con Git, análisis de datos y lectura de código ajeno
-→ Ahora    analítica de datos (regresión, ANOVA) y mantenimiento de software
+2023  ●  Ingreso a Ingeniería de Software
+      │  Universidad Cooperativa de Colombia
+      │
+2024  ●  Estructuras de datos en Python
+      │
+2025  ●  BlackJack Royale · CineX
+      │  Computación Ubicua: robot y sensores
+      │
+2026  ●  Numi · Casa Rendón (cliente real)
+      │
+ →    ○  Siguiente: práctica empresarial
+      │
+2027  ○  Fin de la carrera (previsto)
 ```
 
 ---
 
-### 02 &nbsp;/&nbsp; Proyectos
+### Stack
 
-| Proyecto | Descripción | Stack |
+| Herramienta | Para qué la uso | Proyecto |
 | :-- | :-- | :-- |
-| [**chatbot**](https://github.com/santiago12R/chatbot) | Chatbot que responde con inteligencia artificial. | `Python` `IA` |
-| [**estructura-datos**](https://github.com/santiago12R/estructura-datos) | Implementaciones y ejercicios de estructuras de datos: listas, pilas, colas y árboles. | `Python` |
-| [**practica-java-colaborativa**](https://github.com/santiago12R/practica-java-colaborativa) | Práctica de programación en equipo con ramas, pull requests y merge. | `Java` `Git` |
-| [**Computacion-ubicua**](https://github.com/santiago12R/Computacion-ubicua) | Laboratorios del curso de Computación Ubicua. | `Template` |
-| **Frontend Alojamientos** | Diagnóstico, despliegue y plan de mantenimiento de una SPA de reservas de alojamientos. | `JavaScript` `Vite` `Bootstrap` |
-| **Analítica de Datos** | Modelos de regresión lineal, ANOVA y regresión logística sobre datasets reales. | `Python` `Pandas` `Jupyter` |
+| HTML y CSS | Estructura y estilos | Casa Rendón, BlackJack |
+| JavaScript | Lógica en el navegador | Casa Rendón, BlackJack |
+| React | Componentes de interfaz | Casa Rendón |
+| Bootstrap | Diseño responsive | CineX (frontend) |
+| Flutter y Dart | Apps móviles | Numi |
+| Java | Programación orientada a objetos | CineX, POO en Java |
+| Spring Boot | APIs REST | CineX |
+| Python | Servidores y scripts | BlackJack, Estructuras de datos |
+| MySQL | Base de datos relacional | CineX |
+| Git y GitHub | Trabajo en equipo | Todos |
+| VS Code | Editor | Todos |
+| Postman | Probar APIs | Académico |
+| Docker | Contenedores | Académico |
 
 ---
 
-### 03 &nbsp;/&nbsp; Trayectoria
+### Credenciales
 
-```txt
-2023  ●  Ingreso a Ingeniería de Software — Universidad Cooperativa de Colombia
-      │
-2024  ●  Programación en Java y trabajo colaborativo con Git y GitHub
-      │  Estructuras de datos en Python
-      │
-2025  ●  Computación ubicua · Chatbot con inteligencia artificial
-      │
-2026  ●  Analítica de datos: regresión lineal, ANOVA y regresión logística
-      │  Implementación y mantenimiento de software (proyecto Alojamientos)
-      │
- →    ○  Práctica empresarial
-```
+Insignias verificables de Google Cloud en Google Skills:
+
+- [Google Cloud Computing Foundations: Cloud Computing Fundamentals](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23162887)
+- [Google Cloud Computing Foundations: Infrastructure in Google Cloud](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23588126)
+- [Implementing Cloud Load Balancing for Compute Engine](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23233254)
+- [Set Up an App Dev Environment on Google Cloud](https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23629566)
 
 ---
 
-### 04 &nbsp;/&nbsp; Stack
+### Contribuciones
 
-<table>
-  <tr>
-    <td width="140"><b>Lenguajes</b></td>
-    <td><img src="https://skillicons.dev/icons?i=python,java,js,html,css&theme=dark" /></td>
-  </tr>
-  <tr>
-    <td><b>Web</b></td>
-    <td><img src="https://skillicons.dev/icons?i=bootstrap,vite&theme=dark" /></td>
-  </tr>
-  <tr>
-    <td><b>Datos</b></td>
-    <td><img src="https://skillicons.dev/icons?i=mysql&theme=dark" /></td>
-  </tr>
-  <tr>
-    <td><b>Herramientas</b></td>
-    <td><img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" /></td>
-  </tr>
-</table>
-
-<p>
-  <img src="https://img.shields.io/badge/Jupyter-0d1117?style=flat-square&logo=jupyter&logoColor=F37626" />
-  <img src="https://img.shields.io/badge/Google_Colab-0d1117?style=flat-square&logo=googlecolab&logoColor=F9AB00" />
-  <img src="https://img.shields.io/badge/Pandas-0d1117?style=flat-square&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scrum-0d1117?style=flat-square&logo=scrumalliance&logoColor=white" />
-  <img src="https://img.shields.io/badge/Achievement-Pull_Shark-0d1117?style=flat-square&logo=github&logoColor=white" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/santiago12R/santiago12R/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/santiago12R/santiago12R/output/snake.svg" />
+  <img src="https://raw.githubusercontent.com/santiago12R/santiago12R/output/snake-dark.svg" width="100%" alt="Gráfica de contribuciones de santiago12R del último año, animada como una serpiente que recorre los días con actividad" />
+</picture>
 
 ---
-
-### 05 &nbsp;/&nbsp; Contribuciones
-
-<img height="150" src="https://streak-stats.demolab.com?user=santiago12R&theme=github-dark-blue&hide_border=true&background=0d1117&locale=es" />
-
-<img width="100%" src="https://ghchart.rshah.org/2ea44f/santiago12R" />
-
----
-
-<!-- ───────────────────────────── 06 · PIE DE PÁGINA ───────────────────────────── -->
 
 <p align="center">
-  <a href="https://github.com/santiago12R"><img src="https://img.shields.io/badge/GitHub-0d1117?style=flat-square&logo=github&logoColor=white" /></a>
-</p>
-
-<p align="center">
-  <sub>Medellín, Colombia · Abierto a práctica empresarial · Gracias por pasar</sub>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=santiago12R&style=flat-square&color=30363d&label=visitas" />
+  ¿Tienes una vacante de práctica o un proyecto? Escríbeme.<br />
+  <a href="mailto:santiago.rodriguezj12@gmail.com">santiago.rodriguezj12@gmail.com</a>
 </p>
