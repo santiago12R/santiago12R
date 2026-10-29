@@ -1,9 +1,7 @@
 <!-- ───────────────────────────── 00 · ENCABEZADO ───────────────────────────── -->
 
-<h1 align="left">Santiago Rodríguez Jiménez</h1>
-
-<p align="left">
-  <code>Ingeniería de Software</code> · <code>Backend & Datos</code> · <code>Python · Java · JavaScript</code>
+<p align="center">
+  <img src="./banner.svg" width="100%" alt="Santiago Rodríguez Jiménez — Ingeniería de Software · Backend & Datos" />
 </p>
 
 <p align="left">
