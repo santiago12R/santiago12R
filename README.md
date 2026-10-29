@@ -40,7 +40,7 @@ Estudiante de Ingeniería de Software (VII semestre) en la Universidad Cooperati
 
 <picture>
   <source media="(max-width: 700px)" srcset="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones-movil.svg">
-  <img src="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones.svg" width="100%" alt="Mis contribuciones del último año en GitHub dibujadas como una pared de mina: cada bloque es un día; piedra si no hubo actividad y mineral o gema según la cantidad de commits. Se actualiza todos los días.">
+  <img src="https://raw.githubusercontent.com/santiago12R/santiago12R/output/contribuciones.svg" width="100%" alt="Mis contribuciones del último año en GitHub dibujadas como el corte de una mina: cada día es una veta que brilla según cuánto programé, con el total, los días activos, la racha más larga y el mejor día. Se actualiza todos los días.">
 </picture>
 
-<a href="mailto:santiago.rodriguezj12@gmail.com"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/cierre.svg"><img src="assets/readme/cierre.svg" width="100%" alt="¿Tu equipo necesita un practicante? Full stack o analítica de datos, disponible para práctica empresarial. santiago.rodriguezj12@gmail.com"></picture></a>
+<a href="mailto:santiago.rodriguezj12@gmail.com"><picture><source media="(max-width: 700px)" srcset="assets/readme/movil/cierre.svg"><img src="assets/readme/cierre.svg" width="100%" alt="¿Tu equipo necesita un practicante? Full stack o analítica de datos, disponible para práctica. santiago.rodriguezj12@gmail.com. Un minero levanta una gema junto a la entrada de una mina con el letrero Salida: tu equipo."></picture></a>

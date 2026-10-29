@@ -721,34 +721,117 @@ ALT_CIERRE = ("¿Tu equipo necesita un practicante? Full stack o analítica de d
               "Escríbeme: santiago.rodriguezj12@gmail.com")
 
 
+def entrada_mina(L, x, y, w, h, gy):
+    """Entrada de mina con marco de madera; (x, y) esquina superior del marco, gy = suelo."""
+    L.add(f'<rect x="{x + 14}" y="{y + 14}" width="{w - 28}" height="{gy - y - 14}" fill="#04060a"/>')
+    L.add(f'<rect x="{x + 14}" y="{y + 14}" width="{w - 28}" height="{gy - y - 14}" fill="url(#tunel)"/>')
+    for px_ in (x, x + w - 14):
+        L.px(px_, y + 8, "#6b4428", 14, gy - y - 8)
+        L.px(px_, y + 8, "#8b5a2b", 4, gy - y - 8)
+        L.px(px_ + 10, y + 8, "#4a2c18", 4, gy - y - 8)
+    L.px(x - 10, y, "#6b4428", w + 20, 16)
+    L.px(x - 10, y, "#a8743d", w + 20, 4)
+    L.px(x - 10, y + 12, "#4a2c18", w + 20, 4)
+    for bx in range(x - 4, x + w + 6, 24):
+        L.px(bx, y + 6, "#3a2418", 2, 4)
+
+
+def cartel(L, cx, y, linea1, linea2, size2):
+    w = int(ancho_texto(linea2, size2)) + 40
+    x = cx - w // 2
+    L.add(f'<rect x="{x + 18}" y="{y + 38}" width="2" height="30" fill="#9aa7b8"/>')
+    L.add(f'<rect x="{x + w - 20}" y="{y + 38}" width="2" height="30" fill="#9aa7b8"/>')
+    L.panel(x, y, w, 42, PANEL2, ROSA, 3)
+    L.texto(cx, y + 16, linea1, 10, GRIS, 700, "middle", ' letter-spacing="2"')
+    L.texto(cx, y + 33, linea2, size2, CREMA, 700, "middle")
+
+
+def vagon_gemas(L, x, gy):
+    y = gy - 32
+    for gx, gyy, c in [(x + 8, y - 10, GEMA), (x + 22, y - 14, AMAR), (x + 36, y - 10, ROSA), (x + 48, y - 8, GEMA), (x + 16, y - 4, CIAN), (x + 30, y - 4, GEMA)]:
+        L.add(f'<polygon points="{gx},{gyy + 6} {gx + 6},{gyy} {gx + 12},{gyy + 6} {gx + 6},{gyy + 12}" fill="{c}"/>')
+        L.add(f'<rect class="s" x="{gx + 4}" y="{gyy + 3}" width="2" height="2" fill="#ffffff" style="animation-delay:{(gx % 7) / 3:.2f}s"/>')
+    L.sprite(x, y, VAGON, PAL_VAGON, 4)
+    for wx in (x + 8, x + 44):
+        L.sprite(wx, gy - 9, RUEDA_A, PAL_RUEDA, 4)
+
+
+def minero_con_gema(L, x, gy):
+    L.sprite(x, gy - 84, MINERO, PAL_MINERO, 4)
+    L.add(f'<g class="alza"><rect x="{x + 44}" y="{gy - 64}" width="6" height="22" fill="#3b4256"/>'
+          f'<rect x="{x + 43}" y="{gy - 70}" width="8" height="8" fill="#8a6a4a"/>'
+          f'<polygon points="{x + 40},{gy - 76} {x + 47},{gy - 84} {x + 54},{gy - 76} {x + 47},{gy - 68}" fill="{GEMA}"/>'
+          f'<polygon points="{x + 40},{gy - 76} {x + 47},{gy - 84} {x + 47},{gy - 76}" fill="#c8fffb"/></g>')
+    L.add(f'<rect class="s" x="{x + 56}" y="{gy - 90}" width="3" height="3" fill="#ffffff"/>')
+    L.add(f'<rect class="s" x="{x + 36}" y="{gy - 88}" width="2" height="2" fill="#ffffff" style="animation-delay:.8s"/>')
+
+
+def suelo_cierre(L, gy, W):
+    L.px(0, gy, "#4fa834", W, 6)
+    for x in range(0, W, 12):
+        L.px(x, gy - 3, "#6fd04a", 4, 3) if (x * 7) % 5 < 2 else None
+    L.px(0, gy + 6, "#6e4426", W, L.h - gy - 6)
+    for x in range(0, W, 14):
+        L.px(x + (x * 3) % 8, gy + 10 + (x * 5) % 10, "#8a5a33", 4, 4)
+
+
+CSS_CIERRE = (".halo{animation:halo 2.2s ease-in-out infinite}@keyframes halo{0%,100%{opacity:.2}50%{opacity:.1}}.farol{animation:farol 2.2s ease-in-out infinite}@keyframes farol{0%,100%{opacity:.9}50%{opacity:.55}}"
+              ".alza{transform-box:fill-box;transform-origin:50% 100%;animation:alza 1.6s ease-in-out infinite}"
+              "@keyframes alza{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}"
+              "@media (prefers-reduced-motion:reduce){.halo,.farol,.alza{animation:none}}")
+TUNEL = ('<radialGradient id="tunel" cx=".5" cy=".35" r=".7"><stop offset="0" stop-color="#ffb36b" stop-opacity=".18"/>'
+         '<stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>')
+
+
+def farol(L, cx, y):
+    L.add(f'<rect x="{cx - 1}" y="{y}" width="2" height="12" fill="#9aa7b8"/>')
+    L.add(f'<circle class="halo" cx="{cx}" cy="{y + 22}" r="30" fill="#ffb36b" opacity=".16"/>')
+    L.px(cx - 6, y + 12, "#3a2418", 12, 4)
+    L.add(f'<rect class="farol" x="{cx - 5}" y="{y + 16}" width="10" height="12" fill="{AMAR}"/>')
+    L.px(cx - 6, y + 28, "#3a2418", 12, 4)
+
+
 def cierre(movil=False):
-    W, H = (400, 250) if movil else (1000, 170)
-    L = Lienzo(W, H, "Contacto")
-    L.fondo(12 if not movil else 8, 21, evitar=[(0, 0, W, H - 40)])
-    gy = H - 20
-    L.add(f'<rect x="0" y="{gy}" width="{W}" height="20" fill="#4fa834"/>')
-    L.add(f'<rect x="0" y="{gy + 6}" width="{W}" height="14" fill="#7a4e2b"/>')
+    correo = "santiago.rodriguezj12@gmail.com"
     if movil:
-        L.texto(24, 52, "¿Tu equipo necesita", 22, CREMA, 700)
-        L.texto(24, 82, "un practicante?", 22, CREMA, 700)
-        L.texto(24, 114, "Full stack o analítica de datos.", 14, ROSA, 700)
-        L.texto(24, 136, "Disponible para práctica empresarial.", 14, "#d3dceb")
-        L.panel(24, 156, 352, 48, PANEL2, CIAN)
-        filas, pal = ICONOS["correo"]
-        L.sprite(40, 172, filas, pal, 3)
-        L.texto(74, 186, "santiago.rodriguezj12@gmail.com", 14, CREMA, 700)
-        L.add(f'<rect class="cur" x="{74 + int(ancho_texto("santiago.rodriguezj12@gmail.com", 14)) + 4}" y="174" width="8" height="16" fill="{CIAN}"/>')
+        W, H, gy = 400, 440, 404
+        L = Lienzo(W, H, "Contacto", CSS_CIERRE)
+        L.fondo(10, 21, evitar=[(0, 0, W, 210)])
+        L.o.insert(0, f"<defs>{TUNEL}</defs>")
+        L.texto(24, 56, "¿TU EQUIPO NECESITA", 24, CREMA, 700)
+        L.texto(24, 90, "UN PRACTICANTE?", 24, CIAN, 700)
+        L.texto(24, 122, "Full stack o analítica de datos.", 13, "#d3dceb")
+        L.texto(24, 142, "Disponible para práctica empresarial.", 13, "#d3dceb")
+        L.texto(24, 176, correo, 15, AMAR, 700)
+        L.add(f'<rect class="cur" x="{24 + int(ancho_texto(correo, 15)) + 4}" y="164" width="8" height="15" fill="{AMAR}"/>')
+        entrada_mina(L, 252, 300, 124, 0, gy)
+        farol(L, 314, 316)
+        cartel(L, 314, 236, "SALIDA", "→ TU EQUIPO", 14)
+        for x in range(30, 262, 16):
+            L.px(x, gy - 4, "#5a3a22", 8, 4)
+        L.px(24, gy - 7, "#9aa7b8", 240, 3)
+        vagon_gemas(L, 40, gy - 6)
+        minero_con_gema(L, 150, gy)
+        suelo_cierre(L, gy, W)
     else:
-        L.texto(40, 62, "¿Tu equipo necesita un practicante?", 26, CREMA, 700)
-        L.texto(40, 94, "Full stack o analítica de datos.", 15, ROSA, 700)
-        L.texto(40, 116, "Disponible para práctica empresarial.", 15, "#d3dceb")
-        L.panel(600, 46, 360, 52, PANEL2, CIAN)
-        filas, pal = ICONOS["correo"]
-        L.sprite(618, 64, filas, pal, 3)
-        L.texto(654, 78, "santiago.rodriguezj12@gmail.com", 14, CREMA, 700)
-        L.add(f'<rect class="cur" x="{654 + int(ancho_texto("santiago.rodriguezj12@gmail.com", 14)) + 4}" y="66" width="8" height="16" fill="{CIAN}"/>')
-        # pequeño minero saludando junto al correo
-        L.sprite(W - 60, gy - 42, ["..YYY.", ".YYYYL", "YYYYYY", ".SSES.", ".BBBB.", "OOCCOO", "OOCCOO", ".PPPP.", ".P..P.", "TT..TT"], PAL_MINERO | {"S": "#f0b98a"}, 4)
+        W, H, gy = 1000, 290, 252
+        L = Lienzo(W, H, "Contacto", CSS_CIERRE)
+        L.fondo(16, 21, evitar=[(0, 0, 600, 230)])
+        L.o.insert(0, f"<defs>{TUNEL}</defs>")
+        L.texto(48, 86, "¿TU EQUIPO NECESITA", 34, CREMA, 700)
+        L.texto(48, 130, "UN PRACTICANTE?", 34, CIAN, 700)
+        L.texto(48, 168, "Full stack o analítica de datos · disponible para práctica", 15, "#d3dceb")
+        L.texto(48, 206, correo, 18, AMAR, 700)
+        L.add(f'<rect class="cur" x="{48 + int(ancho_texto(correo, 18)) + 6}" y="192" width="9" height="17" fill="{AMAR}"/>')
+        entrada_mina(L, 790, 136, 168, 0, gy)
+        farol(L, 874, 152)
+        cartel(L, 874, 68, "SALIDA", "→ TU EQUIPO", 16)
+        for x in range(600, 800, 16):
+            L.px(x, gy - 4, "#5a3a22", 8, 4)
+        L.px(596, gy - 7, "#9aa7b8", 214, 3)
+        vagon_gemas(L, 612, gy - 6)
+        minero_con_gema(L, 700, gy)
+        suelo_cierre(L, gy, W)
     return L.guardar(("movil/" if movil else "") + "cierre.svg", ALT_CIERRE)
 
 
