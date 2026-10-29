@@ -14,9 +14,9 @@ DEST = os.path.join(RAIZ, "assets", "readme")
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # ------------------------------------------------------------------ paleta
-BG0, BG1, BG2 = "#1c1033", "#2a1245", "#3a1646"
-PANEL, PANEL2, BORDE = "#221338", "#2b1848", "#4a2c7a"
-CREMA, ROSA, CIAN, GEMA, AMAR, VERDE, GRIS = "#fff1e6", "#ff8fb8", "#7dd3fc", "#5ee6e0", "#ffe066", "#7ee08a", "#b7a9d6"
+BG0, BG1, BG2 = "#06090f", "#0b1120", "#0f1729"
+PANEL, PANEL2, BORDE = "#0e1525", "#141d33", "#2a3b5f"
+CREMA, ROSA, CIAN, GEMA, AMAR, VERDE, GRIS = "#f5f1ea", "#ff8fb8", "#7dd3fc", "#5ee6e0", "#ffe066", "#7ee08a", "#93a4bf"
 FUENTE = "'Courier New',Consolas,'Liberation Mono',monospace"
 P = 4
 
@@ -97,7 +97,7 @@ class Lienzo:
         defs = ""
         if self.grad:
             defs = (f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG0}"/>'
-                    f'<stop offset=".6" stop-color="{BG1}"/><stop offset="1" stop-color="{BG2}"/></linearGradient>')
+                    f'<stop offset=".55" stop-color="{BG1}"/><stop offset="1" stop-color="{BG2}"/></linearGradient>')
         cab = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.w} {self.h}" width="{self.w}" height="{self.h}" '
                f'role="img" aria-label="{esc(alt or self.titulo)}"><title>{esc(self.titulo)}</title>'
                f'<defs>{defs}<style>{ESTILO_BASE}{self.css}</style></defs>')
@@ -292,7 +292,7 @@ def nubes(L, posiciones):
     for x, y in posiciones:
         L.add('<g class="cl" opacity=".55">')
         for dx, dy, w in [(8, 0, 20), (0, 6, 44), (-8, 12, 60)]:
-            L.px(x + dx, y + dy, "#4a3a72", w, 6)
+            L.px(x + dx, y + dy, "#1c2742", w, 6)
         L.add('</g>')
 
 
@@ -368,7 +368,7 @@ def portada_movil():
 # ================================================================== botones y chips
 ICONOS = {
     "pdf": ([".WWWW..", ".WWWWW.", ".WRRRW.", ".WWWWW.", ".WRRRW.", ".WWWWW.", ".WWWWW."], {"W": CREMA, "R": ROSA}),
-    "correo": (["CCCCCCC", "CWCCCWC", "CCWCWCC", "CCCWCCC", "CCCCCCC"], {"C": CIAN, "W": "#1c1033"}),
+    "correo": (["CCCCCCC", "CWCCCWC", "CCWCWCC", "CCCWCCC", "CCCCCCC"], {"C": CIAN, "W": "#06090f"}),
     "codigo": (["..C.C..", ".C...C.", "C.....C", ".C...C.", "..C.C.."], {"C": CIAN}),
     "gema": (["..G..", ".GgG.", "GgGgG", ".GgG.", "..G.."], {"G": GEMA, "g": "#c8fffb"}),
     "insignia": ([".YYY.", "YYyYY", "YyYyY", ".YYY.", ".R.R.", "R...R"], {"Y": AMAR, "y": "#fff6b0", "R": ROSA}),
@@ -404,7 +404,7 @@ ICONO_PROY = {
     "casa-rendon": (["..W.W...", "...W.W..", "CCCCCC..", "CCCCCCCC", "CCCCCC.C", "CCCCCCCC", "CCCCCC..", ".CCCC..."], {"C": "#c9895a", "W": CREMA}),
     "numi": (["...YY...", "..YYYY..", "YYYYYYYY", ".YYYYYY.", "..YYYY..", ".YY..YY.", "YY....YY"], {"Y": AMAR}),
     "blackjack": (["WWWWW...", "WRWWW...", "WWWRWWWW", "WWWWWRWW", "WRWWWWWW", "WWWWWWRW", "...WWWWW"], {"W": CREMA, "R": ROSA}),
-    "cinex": (["KWKWKWKW", "WKWKWKWK", "CCCCCCCC", "CCCCCCCC", "CCCCCCCC", "CCCCCCCC", "CCCCCCCC"], {"K": "#1c1033", "W": CREMA, "C": CIAN}),
+    "cinex": (["KWKWKWKW", "WKWKWKWK", "CCCCCCCC", "CCCCCCCC", "CCCCCCCC", "CCCCCCCC", "CCCCCCCC"], {"K": "#06090f", "W": CREMA, "C": CIAN}),
 }
 COLOR_ESTADO = {"CLIENTE REAL": VERDE, "EN VIVO": VERDE, "EN DESARROLLO": AMAR, "ACADÉMICO": CIAN}
 
@@ -433,7 +433,7 @@ def tarjeta(nombre, titulo, estados, meta, desc, cifra_n, cifra_txt, rol, stack,
     L.texto(62, 88, titulo, fs_t, CREMA, 700)
     y = 120
     for ln in partir(desc, cols):
-        L.texto(20, y, ln, fs, "#e3d7ff")
+        L.texto(20, y, ln, fs, "#d3dceb")
         y += fs + 6
     # cifra
     y += 14
@@ -447,9 +447,9 @@ def tarjeta(nombre, titulo, estados, meta, desc, cifra_n, cifra_txt, rol, stack,
     # rol
     for i, ln in enumerate(partir("Mi rol: " + rol, cols)):
         if i == 0:
-            L.add(f'<text class="t" x="20" y="{y}" font-size="{fs}" fill="#e3d7ff"><tspan fill="{ROSA}" font-weight="700">Mi rol:</tspan>{esc(ln[7:])}</text>')
+            L.add(f'<text class="t" x="20" y="{y}" font-size="{fs}" fill="#d3dceb"><tspan fill="{ROSA}" font-weight="700">Mi rol:</tspan>{esc(ln[7:])}</text>')
         else:
-            L.texto(20, y, ln, fs, "#e3d7ff")
+            L.texto(20, y, ln, fs, "#d3dceb")
         y += fs + 6
     # stack
     x, y = 20, H - 40
@@ -568,7 +568,7 @@ def ficha_stack(L, x, y, w, h, n, u, p, color, fs=13):
     L.px(x + 12, y + 14, color, 12, 12)
     L.px(x + 12, y + 14, "#ffffff", 12, 3, ' opacity=".35"')
     L.texto(x + 34, y + 25, n, fs + 2, CREMA, 700)
-    L.texto(x + 12, y + 46, u, fs - 1, "#e3d7ff")
+    L.texto(x + 12, y + 46, u, fs - 1, "#d3dceb")
     if p == "ACADÉMICO":
         wa = int(ancho_texto(p, 10)) + 12
         L.add(f'<rect x="{x + 12}" y="{y + 54}" width="{wa}" height="18" fill="none" stroke="{CIAN}" stroke-width="1.5"/>')
@@ -621,7 +621,7 @@ def cierre(movil=False):
         L.texto(24, 52, "¿Tu equipo necesita", 22, CREMA, 700)
         L.texto(24, 82, "un practicante?", 22, CREMA, 700)
         L.texto(24, 114, "Full stack o analítica de datos.", 14, ROSA, 700)
-        L.texto(24, 136, "Disponible para práctica empresarial.", 14, "#e3d7ff")
+        L.texto(24, 136, "Disponible para práctica empresarial.", 14, "#d3dceb")
         L.panel(24, 156, 352, 48, PANEL2, CIAN)
         filas, pal = ICONOS["correo"]
         L.sprite(40, 172, filas, pal, 3)
@@ -630,7 +630,7 @@ def cierre(movil=False):
     else:
         L.texto(40, 62, "¿Tu equipo necesita un practicante?", 26, CREMA, 700)
         L.texto(40, 94, "Full stack o analítica de datos.", 15, ROSA, 700)
-        L.texto(40, 116, "Disponible para práctica empresarial.", 15, "#e3d7ff")
+        L.texto(40, 116, "Disponible para práctica empresarial.", 15, "#d3dceb")
         L.panel(600, 46, 360, 52, PANEL2, CIAN)
         filas, pal = ICONOS["correo"]
         L.sprite(618, 64, filas, pal, 3)

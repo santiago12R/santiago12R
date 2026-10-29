@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Santiago Rodríguez Jiménez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. Escena pixel art de un minero que pica un bloque de mineral."><title>Santiago Rodríguez Jiménez — Ingeniería de Software · Full Stack y Datos</title><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c1033"/><stop offset=".6" stop-color="#2a1245"/><stop offset="1" stop-color="#3a1646"/></linearGradient><style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Santiago Rodríguez Jiménez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. Escena pixel art de un minero que pica un bloque de mineral."><title>Santiago Rodríguez Jiménez — Ingeniería de Software · Full Stack y Datos</title><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06090f"/><stop offset=".55" stop-color="#0b1120"/><stop offset="1" stop-color="#0f1729"/></linearGradient><style>
 .t{font-family:'Courier New',Consolas,'Liberation Mono',monospace}
 .s{animation:tw 3s steps(2,end) infinite}
 @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
@@ -32,22 +32,22 @@
 @media (prefers-reduced-motion:reduce){.armm,.bodym,.orem,.k1,.k2,.pt,.gem,.fl,.lamp,.cl{animation:none}.pt,.gem{opacity:0}}
 </style></defs><defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff6b0" stop-opacity=".55"/><stop offset="1" stop-color="#fff6b0" stop-opacity="0"/></linearGradient><clipPath id="type"><rect x="24" y="166" width="0" height="76"><animate attributeName="width" dur="2.2s" begin="0.4s" fill="freeze" calcMode="discrete" values="0;22;44;66;88;111;133;155;177;200;222;244;266;288;311;333;355;377;400" keyTimes="0.000;0.056;0.111;0.167;0.222;0.278;0.333;0.389;0.444;0.500;0.556;0.611;0.667;0.722;0.778;0.833;0.889;0.944;1.000"/></rect></clipPath></defs>
 <rect width="400" height="500" fill="url(#bg)"/>
-<rect class="s" x="60" y="377" width="2" height="2" fill="#fff1e6" style="animation-delay:1.44s"/>
-<rect class="s" x="54" y="42" width="2" height="2" fill="#fff1e6" style="animation-delay:1.20s"/>
-<rect class="s" x="156" y="417" width="2" height="2" fill="#fff1e6" style="animation-delay:0.67s"/>
-<rect class="s" x="149" y="407" width="2" height="2" fill="#fff1e6" style="animation-delay:2.48s"/>
-<rect class="s" x="142" y="117" width="2" height="2" fill="#fff1e6" style="animation-delay:2.49s"/>
-<rect class="s" x="141" y="417" width="2" height="2" fill="#fff1e6" style="animation-delay:0.58s"/>
-<rect class="s" x="329" y="452" width="3" height="3" fill="#fff1e6" style="animation-delay:2.88s"/>
-<rect class="s" x="198" y="52" width="3" height="3" fill="#fff1e6" style="animation-delay:1.01s"/>
-<rect class="s" x="135" y="99" width="2" height="2" fill="#fff1e6" style="animation-delay:1.42s"/>
-<rect class="s" x="53" y="491" width="3" height="3" fill="#fff1e6" style="animation-delay:2.52s"/>
-<rect class="s" x="11" y="473" width="2" height="2" fill="#fff1e6" style="animation-delay:1.72s"/>
-<rect class="s" x="167" y="442" width="3" height="3" fill="#fff1e6" style="animation-delay:0.59s"/>
+<rect class="s" x="60" y="377" width="2" height="2" fill="#f5f1ea" style="animation-delay:1.44s"/>
+<rect class="s" x="54" y="42" width="2" height="2" fill="#f5f1ea" style="animation-delay:1.20s"/>
+<rect class="s" x="156" y="417" width="2" height="2" fill="#f5f1ea" style="animation-delay:0.67s"/>
+<rect class="s" x="149" y="407" width="2" height="2" fill="#f5f1ea" style="animation-delay:2.48s"/>
+<rect class="s" x="142" y="117" width="2" height="2" fill="#f5f1ea" style="animation-delay:2.49s"/>
+<rect class="s" x="141" y="417" width="2" height="2" fill="#f5f1ea" style="animation-delay:0.58s"/>
+<rect class="s" x="329" y="452" width="3" height="3" fill="#f5f1ea" style="animation-delay:2.88s"/>
+<rect class="s" x="198" y="52" width="3" height="3" fill="#f5f1ea" style="animation-delay:1.01s"/>
+<rect class="s" x="135" y="99" width="2" height="2" fill="#f5f1ea" style="animation-delay:1.42s"/>
+<rect class="s" x="53" y="491" width="3" height="3" fill="#f5f1ea" style="animation-delay:2.52s"/>
+<rect class="s" x="11" y="473" width="2" height="2" fill="#f5f1ea" style="animation-delay:1.72s"/>
+<rect class="s" x="167" y="442" width="3" height="3" fill="#f5f1ea" style="animation-delay:0.59s"/>
 <g class="cl" opacity=".55">
-<rect x="228" y="24" width="20" height="6" fill="#4a3a72"/>
-<rect x="220" y="30" width="44" height="6" fill="#4a3a72"/>
-<rect x="212" y="36" width="60" height="6" fill="#4a3a72"/>
+<rect x="228" y="24" width="20" height="6" fill="#1c2742"/>
+<rect x="220" y="30" width="44" height="6" fill="#1c2742"/>
+<rect x="212" y="36" width="60" height="6" fill="#1c2742"/>
 </g>
 <rect x="350" y="22" width="20" height="5" fill="#f4f0ff"/>
 <rect x="350" y="27" width="5" height="5" fill="#f4f0ff"/>
@@ -71,7 +71,7 @@
 <g class="f"><polygon points="293,94 300,98 300,106 293,102" fill="#2f8fc4"/><polygon points="307,94 300,98 300,106 307,102" fill="#1f6a94"/><polygon points="300,90 307,94 300,98 293,94" fill="#7dd3fc"/></g>
 <g class="f"><polygon points="243,134 250,138 250,146 243,142" fill="#c9a21c"/><polygon points="257,134 250,138 250,146 257,142" fill="#8f7310"/><polygon points="250,130 257,134 250,138 243,134" fill="#ffe066"/></g>
 <g class="f"><polygon points="363,124 370,128 370,136 363,132" fill="#c93d85"/><polygon points="377,124 370,128 370,136 377,132" fill="#8e2660"/><polygon points="370,120 377,124 370,128 363,124" fill="#ff8fb8"/></g>
-<g clip-path="url(#type)"><text class="t" x="24" y="196" font-size="30" font-weight="700" fill="#fff1e6" letter-spacing="-1">Santiago</text><text class="t" x="24" y="232" font-size="30" font-weight="700" fill="#fff1e6" letter-spacing="-1">Rodríguez Jiménez</text></g>
+<g clip-path="url(#type)"><text class="t" x="24" y="196" font-size="30" font-weight="700" fill="#f5f1ea" letter-spacing="-1">Santiago</text><text class="t" x="24" y="232" font-size="30" font-weight="700" fill="#f5f1ea" letter-spacing="-1">Rodríguez Jiménez</text></g>
 <rect x="24" y="244" width="352" height="4" fill="#ff8fb8" opacity="0"><animate attributeName="opacity" from="0" to=".9" begin="3s" dur=".01s" fill="freeze"/></rect>
 <text class="t" x="24" y="274" font-size="16" font-weight="500" fill="#ff8fb8" opacity="0">Ing. de Software · Full Stack &amp; Datos<animate attributeName="opacity" from="0" to="1" begin="3.1s" dur=".4s" fill="freeze"/></text>
 <text class="t" x="24" y="302" font-size="14" fill="#7dd3fc" opacity="0">&gt; Disponible para práctica empresarial<animate attributeName="opacity" values="0;1;1;0;0;0;0;0;0" keyTimes="0;.03;.3;.33;.4;.7;.8;.9;1" dur="9s" begin="3.4s" repeatCount="indefinite"/></text>
