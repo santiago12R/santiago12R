@@ -23,8 +23,6 @@ Estudiante de Ingeniería de Software (VII semestre) en la Universidad Cooperati
   <a href="https://github.com/AlexanderM-Code/CineX-Backend"><img src="assets/readme/chip-cinex.svg" height="34" alt="Código del backend de CineX"></a>
   <br>
   <a href="https://github.com/santiago12R/Computacion-ubicua"><img src="assets/readme/chip-ubicua.svg" height="34" alt="Código de Computación Ubicua: robot y sensores"></a>
-  <a href="https://github.com/santiago12R/examen1"><img src="assets/readme/chip-poo-java.svg" height="34" alt="Código de POO en Java"></a>
-  <a href="https://github.com/santiago12R/estructura-datos"><img src="assets/readme/chip-estructuras.svg" height="34" alt="Código de estructuras de datos en Python"></a>
 </p>
 
 <picture><source media="(max-width: 700px)" srcset="assets/readme/movil/trayectoria.svg"><img src="assets/readme/trayectoria.svg" width="100%" alt="Trayectoria: 2023 ingreso a Ingeniería de Software en la Universidad Cooperativa; 2024 estructuras de datos en Python; 2025 BlackJack, CineX y Computación Ubicua; 2026 Numi y Casa Rendón con cliente real. Siguiente: práctica empresarial. 2027: fin de la carrera, previsto."></picture>

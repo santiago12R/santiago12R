@@ -853,8 +853,6 @@ def main():
     chip("chip-blackjack.svg", "BlackJack", ROSA, "codigo", "Código de BlackJack, proyecto en equipo")
     chip("chip-cinex.svg", "CineX", CIAN, "codigo", "Código del backend de CineX")
     chip("chip-ubicua.svg", "Computación Ubicua", GEMA, "pico", "Código de Computación Ubicua: robot y sensores")
-    chip("chip-poo-java.svg", "POO en Java", GEMA, "pico", "Código de POO en Java")
-    chip("chip-estructuras.svg", "Estructuras de datos", GEMA, "pico", "Código de estructuras de datos en Python")
     chip("chip-credenciales.svg", "Credenciales:", solo_texto=True)
     chip("chip-cred-fundamentals.svg", "Cloud Computing Fundamentals", AMAR, "insignia", "Credencial: Cloud Computing Fundamentals")
     chip("chip-cred-infra.svg", "Infrastructure in Google Cloud", AMAR, "insignia", "Credencial: Infrastructure in Google Cloud")
