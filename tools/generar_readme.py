@@ -319,19 +319,19 @@ def escritura(x, y, ancho, alto, pasos=24, dur=2.6):
             f'begin="0.4s" fill="freeze" calcMode="discrete" values="{vals}" keyTimes="{kts}"/></rect></clipPath>')
 
 
-ALT_PORTADA = ("Santiago Rodríguez Jiménez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad "
+ALT_PORTADA = ("Santiago Rodriguez Jimenez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad "
                "Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. "
                "Escena pixel art de un minero que pica un bloque de mineral.")
 
 
 def portada_escritorio():
-    L = Lienzo(1000, 360, "Santiago Rodríguez Jiménez — Ingeniería de Software · Full Stack y Datos")
+    L = Lienzo(1000, 360, "Santiago Rodriguez Jimenez — Ingeniería de Software · Full Stack y Datos")
     L.fondo(28, 3, evitar=[(410, 50, 990, 200)])
     nubes(L, [(112, 22), (342, 40), (610, 18)])
     luna(L, 940, 20)
     L.add(open(os.path.join(HERE, "s_letra.svgfrag")).read())
     L.add(open(os.path.join(HERE, "gemas.svgfrag")).read())
-    L.add(f'<g clip-path="url(#type)"><text class="t" x="420" y="96" font-size="35" font-weight="700" fill="{CREMA}" letter-spacing="-1">Santiago Rodríguez Jiménez</text></g>')
+    L.add(f'<g clip-path="url(#type)"><text class="t" x="420" y="96" font-size="35" font-weight="700" fill="{CREMA}" letter-spacing="-1">Santiago Rodriguez Jimenez</text></g>')
     L.add(f'<rect x="420" y="106" width="560" height="4" fill="{ROSA}" opacity="0"><animate attributeName="opacity" from="0" to=".9" begin="3s" dur=".01s" fill="freeze"/></rect>')
     L.add(f'<text class="t" x="420" y="140" font-size="20" font-weight="500" fill="{ROSA}" opacity="0">Ingeniería de Software · Full Stack &amp; Datos<animate attributeName="opacity" from="0" to="1" begin="3.1s" dur=".4s" fill="freeze"/></text>')
     for t, (v, k) in zip(LINEAS_ROTAN, KT):
@@ -345,7 +345,7 @@ def portada_escritorio():
 
 
 def portada_movil():
-    L = Lienzo(400, 500, "Santiago Rodríguez Jiménez — Ingeniería de Software · Full Stack y Datos")
+    L = Lienzo(400, 500, "Santiago Rodriguez Jimenez — Ingeniería de Software · Full Stack y Datos")
     L.fondo(18, 4, evitar=[(16, 150, 390, 320)])
     nubes(L, [(220, 24)])
     luna(L, 350, 22)
@@ -353,7 +353,7 @@ def portada_movil():
     for x, y, c1, c2, c3 in [(300, 90, "#7dd3fc", "#2f8fc4", "#1f6a94"), (250, 130, "#ffe066", "#c9a21c", "#8f7310"), (370, 120, "#a78bfa", "#7c5fd6", "#5b3fb0")]:
         L.add(f'<g class="f"><polygon points="{x - 7},{y + 4} {x},{y + 8} {x},{y + 16} {x - 7},{y + 12}" fill="{c2}"/><polygon points="{x + 7},{y + 4} {x},{y + 8} {x},{y + 16} {x + 7},{y + 12}" fill="{c3}"/><polygon points="{x},{y} {x + 7},{y + 4} {x},{y + 8} {x - 7},{y + 4}" fill="{c1}"/></g>')
     L.add(f'<g clip-path="url(#type)"><text class="t" x="24" y="196" font-size="30" font-weight="700" fill="{CREMA}" letter-spacing="-1">Santiago</text>'
-          f'<text class="t" x="24" y="232" font-size="30" font-weight="700" fill="{CREMA}" letter-spacing="-1">Rodríguez Jiménez</text></g>')
+          f'<text class="t" x="24" y="232" font-size="30" font-weight="700" fill="{CREMA}" letter-spacing="-1">Rodriguez Jimenez</text></g>')
     L.add(f'<rect x="24" y="244" width="352" height="4" fill="{ROSA}" opacity="0"><animate attributeName="opacity" from="0" to=".9" begin="3s" dur=".01s" fill="freeze"/></rect>')
     L.add(f'<text class="t" x="24" y="274" font-size="16" font-weight="500" fill="{ROSA}" opacity="0">Ing. de Software · Full Stack &amp; Datos<animate attributeName="opacity" from="0" to="1" begin="3.1s" dur=".4s" fill="freeze"/></text>')
     for t, (v, k) in zip(LINEAS_ROTAN, KT):

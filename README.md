@@ -1,4 +1,4 @@
-<picture><source media="(max-width: 700px)" srcset="assets/readme/movil/portada.svg"><img src="assets/readme/portada.svg" width="100%" alt="Santiago Rodríguez Jiménez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. Escena pixel art de un minero que pica un bloque de mineral."></picture>
+<picture><source media="(max-width: 700px)" srcset="assets/readme/movil/portada.svg"><img src="assets/readme/portada.svg" width="100%" alt="Santiago Rodriguez Jimenez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. Escena pixel art de un minero que pica un bloque de mineral."></picture>
 
 <p align="center">
   <a href="https://github.com/santiago12R/santiago12R/raw/main/Santiago_Rodriguez_CV.pdf"><img src="assets/readme/btn-cv.svg" height="44" alt="Hoja de vida (PDF)"></a>
