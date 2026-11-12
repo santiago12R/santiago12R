@@ -373,6 +373,7 @@ ICONOS = {
     "gema": (["..G..", ".GgG.", "GgGgG", ".GgG.", "..G.."], {"G": GEMA, "g": "#c8fffb"}),
     "insignia": ([".YYY.", "YYyYY", "YyYyY", ".YYY.", ".R.R.", "R...R"], {"Y": AMAR, "y": "#fff6b0", "R": ROSA}),
     "pico": (["SSSS.", "...S.", "..W.S", ".W...", "W...."], {"S": "#e6ecf5", "W": "#b07a43"}),
+    "linkedin": (["BBBBBBB", "BWBBBBB", "BBBBBBB", "BWBWWBB", "BWBWBWB", "BWBWBWB", "BBBBBBB"], {"B": "#0a66c2", "W": CREMA}),
 }
 
 
@@ -842,6 +843,7 @@ def main():
     portada_movil()
     boton("btn-cv.svg", "Hoja de vida · PDF", "pdf", ROSA)
     boton("btn-correo.svg", "Correo", "correo", CIAN)
+    boton("btn-linkedin.svg", "LinkedIn", "linkedin", "#0a66c2")
     for pr in PROYECTOS:
         tarjeta(**pr)
         tarjeta(**pr, movil=True)
