@@ -860,6 +860,7 @@ def main():
     chip("chip-cred-infra.svg", "Infrastructure in Google Cloud", AMAR, "insignia", "Credencial: Infrastructure in Google Cloud")
     chip("chip-cred-balancing.svg", "Cloud Load Balancing", AMAR, "insignia", "Credencial: Cloud Load Balancing")
     chip("chip-cred-appdev.svg", "App Dev Environment", AMAR, "insignia", "Credencial: App Dev Environment")
+    chip("chip-cred-hacker.svg", "Hacker ético · Cisco", ROSA, "insignia", "Certificado: Hacker ético, Cisco Networking Academy")
     trayectoria()
     trayectoria_movil()
     stack()

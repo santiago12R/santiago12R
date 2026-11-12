@@ -37,6 +37,7 @@ Estudiante de Ingeniería de Software (VII semestre) en la Universidad Cooperati
   <a href="https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23588126"><img src="assets/readme/chip-cred-infra.svg" height="34" alt="Credencial: Infrastructure in Google Cloud"></a>
   <a href="https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23233254"><img src="assets/readme/chip-cred-balancing.svg" height="34" alt="Credencial: Cloud Load Balancing"></a>
   <a href="https://www.skills.google/public_profiles/d2cda74b-8293-4ec6-94de-48ceadedb950/badges/23629566"><img src="assets/readme/chip-cred-appdev.svg" height="34" alt="Credencial: App Dev Environment"></a>
+  <a href="assets/certificados/hacker-etico-cisco.pdf"><img src="assets/readme/chip-cred-hacker.svg" height="34" alt="Certificado: Hacker ético, Cisco Networking Academy"></a>
 </p>
 
 <picture>
