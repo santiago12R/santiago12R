@@ -862,7 +862,7 @@ def main():
     boton("btn-cv.svg", "Hoja de vida · PDF", "pdf", ROSA)
     boton("btn-correo.svg", "Correo", "correo", CIAN)
     boton("btn-linkedin.svg", "LinkedIn", "linkedin", "#0a66c2")
-    boton_destacado("btn-portafolio.svg", "Ver portafolio", "web", AMAR)
+    boton_destacado("btn-ver-portafolio.svg", "Ver portafolio", "web", AMAR)
     for pr in PROYECTOS:
         tarjeta(**pr)
         tarjeta(**pr, movil=True)
