@@ -374,6 +374,7 @@ ICONOS = {
     "insignia": ([".YYY.", "YYyYY", "YyYyY", ".YYY.", ".R.R.", "R...R"], {"Y": AMAR, "y": "#fff6b0", "R": ROSA}),
     "pico": (["SSSS.", "...S.", "..W.S", ".W...", "W...."], {"S": "#e6ecf5", "W": "#b07a43"}),
     "web": (["..CCC..", ".C.C.C.", "CCCCCCC", "C..C..C", "CCCCCCC", ".C.C.C.", "..CCC.."], {"C": "#7ee08a"}),
+    "maletin": (["...CCC...", "..C...C..", "CCCCCCCCC", "C.......C", "CCCCCCCCC", "C...C...C", "C.......C", "CCCCCCCCC"], {"C": "#1a1300"}),
     "linkedin": (["BBBBBBB", "BWBBBBB", "BBBBBBB", "BWBWWBB", "BWBWBWB", "BWBWBWB", "BBBBBBB"], {"B": "#0a66c2", "W": CREMA}),
 }
 
@@ -389,20 +390,23 @@ def boton(nombre, etiqueta, icono, color):
 
 
 def boton_destacado(nombre, etiqueta, icono, color):
-    """Botón del llamado principal: mismo alto que los demás, relleno de color y flecha animada."""
+    """Botón del llamado principal: mismo alto que los demás, relleno de color, borde doble resaltado y flecha animada."""
     fs = 15
-    w = int(ancho_texto(etiqueta, fs)) + 92
+    w = int(ancho_texto(etiqueta, fs)) + 100
     h = 44
     css = ("@keyframes flecha{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}"
            ".fl{animation:flecha .8s steps(2) infinite}"
            "@media (prefers-reduced-motion:reduce){.fl{animation:none}}")
     L = Lienzo(w, h, etiqueta, css)
-    L.panel(0, 0, w, h, color, "#1a1300")
-    L.px(6, 6, "#ffffff66", w - 12, 3)
+    L.panel(0, 0, w, h, "#fff3b0", "#fff3b0")
+    L.panel(3, 3, w - 6, h - 6, "#1a1300", "#1a1300")
+    L.panel(6, 6, w - 12, h - 12, color, color)
+    L.px(9, 9, "#ffffff80", w - 18, 3)
+    L.px(9, h - 12, "#c9a227", w - 18, 3)
     filas, pal = ICONOS[icono]
-    L.sprite(16, 22 - len(filas) * 3 // 2, filas, {k: "#1a1300" for k in pal}, 3)
-    L.texto(48, 28, etiqueta, fs, "#1a1300", 700)
-    L.add(f'<g class="fl"><text class="t" x="{w - 30}" y="28" font-size="{fs}" font-weight="700" fill="#1a1300">▶</text></g>')
+    L.sprite(18, 22 - len(filas) * 3 // 2, filas, {k: "#1a1300" for k in pal}, 3)
+    L.texto(54, 28, etiqueta, fs, "#1a1300", 700)
+    L.add(f'<g class="fl"><text class="t" x="{w - 32}" y="28" font-size="{fs}" font-weight="700" fill="#1a1300">▶</text></g>')
     return L.guardar(nombre, etiqueta)
 
 def chip(nombre, etiqueta, color=CIAN, icono="gema", etiqueta_alt=None, solo_texto=False):
@@ -862,7 +866,7 @@ def main():
     boton("btn-cv.svg", "Hoja de vida · PDF", "pdf", ROSA)
     boton("btn-correo.svg", "Correo", "correo", CIAN)
     boton("btn-linkedin.svg", "LinkedIn", "linkedin", "#0a66c2")
-    boton_destacado("btn-ver-portafolio.svg", "Ver portafolio", "web", AMAR)
+    boton_destacado("btn-ver-portafolio-v2.svg", "Ver portafolio", "maletin", AMAR)
     for pr in PROYECTOS:
         tarjeta(**pr)
         tarjeta(**pr, movil=True)
