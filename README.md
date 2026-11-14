@@ -1,13 +1,10 @@
 <picture><source media="(max-width: 700px)" srcset="assets/readme/movil/portada.svg"><img src="assets/readme/portada.svg" width="100%" alt="Santiago Rodriguez Jimenez, estudiante de Ingeniería de Software (7.º semestre) en la Universidad Cooperativa de Colombia, Medellín. Full stack y analítica de datos. Disponible para práctica empresarial. Escena pixel art de un minero que pica un bloque de mineral."></picture>
 
 <p align="center">
+  <a href="https://santiago12r.github.io"><img src="assets/readme/btn-portafolio.svg" height="44" alt="Ver portafolio web"></a>
   <a href="https://github.com/santiago12R/santiago12R/raw/main/Santiago_Rodriguez_CV.pdf"><img src="assets/readme/btn-cv.svg" height="44" alt="Hoja de vida (PDF)"></a>
   <a href="mailto:santiago.rodriguezj12@gmail.com"><img src="assets/readme/btn-correo.svg" height="44" alt="Correo"></a>
   <a href="https://www.linkedin.com/in/santiago12r/"><img src="assets/readme/btn-linkedin.svg" height="44" alt="LinkedIn"></a>
-</p>
-
-<p align="center">
-  <a href="https://santiago12r.github.io"><img src="assets/readme/btn-portafolio.svg" height="60" alt="Ver portafolio web"></a>
 </p>
 
 Estudiante de Ingeniería de Software (VII semestre) en la Universidad Cooperativa de Colombia, Medellín. Construyo **sitios web con HTML, CSS, JavaScript y React**, **apps móviles con Flutter** y **backends con Java, Spring Boot y Python**, siempre en equipo. Busco mi **práctica empresarial en desarrollo full stack o analítica de datos**.
