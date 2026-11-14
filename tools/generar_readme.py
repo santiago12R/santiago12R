@@ -388,6 +388,30 @@ def boton(nombre, etiqueta, icono, color):
     return L.guardar(nombre, etiqueta)
 
 
+def boton_destacado(nombre, etiqueta, icono, color):
+    """Botón grande y animado para el llamado principal (relleno de color, brillo y flecha que parpadea)."""
+    fs = 19
+    w = int(ancho_texto(etiqueta, fs)) + 120
+    h = 60
+    css = ("@keyframes brillo{0%,100%{opacity:.35}50%{opacity:1}}"
+           "@keyframes flecha{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}"
+           ".halo{animation:brillo 1.6s steps(4) infinite}"
+           ".fl{animation:flecha .8s steps(2) infinite}"
+           "@media (prefers-reduced-motion:reduce){.halo,.fl{animation:none}}")
+    L = Lienzo(w, h, etiqueta, css)
+    L.add('<g class="halo">')
+    L.panel(0, 0, w, h, "none", "#d6ffd9")
+    L.add('</g>')
+    L.panel(4, 4, w - 8, h - 8, color, "#0b1a0e")
+    L.px(10, 10, "#ffffff55", w - 20, 4)
+    filas, pal = ICONOS[icono]
+    pal_osc = {k: "#0b1a0e" for k in pal}
+    L.sprite(22, h // 2 - len(filas) * 3 // 2, filas, pal_osc, 3)
+    L.texto(56, h // 2 + 7, etiqueta, fs, "#0b1a0e", 700)
+    L.add(f'<g class="fl"><text class="t" x="{w - 34}" y="{h // 2 + 7}" font-size="{fs}" font-weight="700" fill="#0b1a0e">▶</text></g>')
+    return L.guardar(nombre, etiqueta)
+
+
 def chip(nombre, etiqueta, color=CIAN, icono="gema", etiqueta_alt=None, solo_texto=False):
     w = int(ancho_texto(etiqueta, 13)) + (24 if solo_texto else 46)
     L = Lienzo(w, 34, etiqueta)
@@ -845,7 +869,7 @@ def main():
     boton("btn-cv.svg", "Hoja de vida · PDF", "pdf", ROSA)
     boton("btn-correo.svg", "Correo", "correo", CIAN)
     boton("btn-linkedin.svg", "LinkedIn", "linkedin", "#0a66c2")
-    boton("btn-portafolio.svg", "Portafolio", "web", VERDE)
+    boton_destacado("btn-portafolio.svg", "VER PORTAFOLIO", "web", VERDE)
     for pr in PROYECTOS:
         tarjeta(**pr)
         tarjeta(**pr, movil=True)
