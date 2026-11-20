@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Santiago Rodriguez Jimenez — Hoja de vida</title>
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --side: #3b3333; --side-txt: #f1ece6; --side-dim: #bab7b7; --chip: #574b4b;
+  --paper: #fbf9f6; --ink: #2b2b2b; --head: #3b3333; --accent: #5c2d1f;
+  --muted: #6b6460; --link: #5a6b8c; --rule: #3b3333;
+}
+html, body { width: 210mm; height: 297mm; }
+body { font-family: "Inter", sans-serif; color: var(--ink); background: var(--paper);
+  font-size: 8.1pt; line-height: 1.34; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+header { background: linear-gradient(180deg, #3b3b3b, #585858); color: #fff; text-align: center; padding: 5.5mm 12mm 4.5mm; }
+header h1 { font-family: "Inter Display", "Inter", sans-serif; font-weight: 800; font-size: 21pt; letter-spacing: .5pt; }
+header .role { font-weight: 600; font-size: 9.2pt; letter-spacing: 2.4pt; margin-top: 1.6mm; text-transform: uppercase; }
+header .sum { font-size: 7.9pt; margin: 2.4mm auto 0; max-width: 178mm; color: #f1f1f1; line-height: 1.45; }
+.cols { display: grid; grid-template-columns: 62mm 1fr; min-height: 0; }
+aside { background: var(--side); color: var(--side-txt); padding: 4.5mm 5.5mm 3mm 6.5mm; }
+aside h2 { font-size: 9.2pt; font-weight: 800; letter-spacing: 1.6pt; border-bottom: .6pt solid #7b7472; padding-bottom: 1.2mm; margin: 3.4mm 0 1.6mm; }
+aside h2:first-child { margin-top: 0; }
+aside .k { font-weight: 700; font-size: 7.6pt; margin-top: 1mm; }
+aside .v { color: #fff; font-size: 7.6pt; }
+aside .avail { margin-top: 2mm; background: #574b4b; border-left: 2pt solid #e0b36a; padding: 1.4mm 2mm; font-size: 7.6pt; }
+aside .avail b { display: block; font-size: 7.8pt; }
+aside ul { list-style: none; }
+aside li { position: relative; padding-left: 3.2mm; font-size: 7.6pt; margin-bottom: .7mm; }
+aside li::before { content: ""; position: absolute; left: 0; top: 1.3mm; width: 1.5mm; height: 1.5mm; background: #bbb3af; }
+aside .grp { font-size: 6.8pt; font-weight: 700; letter-spacing: 1pt; color: var(--side-dim); margin: 1.6mm 0 1mm; }
+.chips { display: flex; flex-wrap: wrap; gap: 1.1mm; }
+.chips span { background: var(--chip); font-size: 6.9pt; padding: .5mm 1.8mm; border-radius: .8mm; }
+aside .ref { margin-top: 1.2mm; font-size: 7.3pt; color: #fff; }
+aside .ref b { display: block; font-size: 7.7pt; }
+main { padding: 4.5mm 8mm 3mm 7mm; }
+main h2 { font-size: 11pt; font-weight: 800; letter-spacing: 1pt; color: var(--head); border-bottom: .8pt solid var(--rule); padding-bottom: 1mm; margin: 3mm 0 1.6mm; }
+main h2:first-child { margin-top: 0; }
+.it { margin-bottom: 1.7mm; }
+.it h3 { font-size: 8.5pt; font-weight: 700; color: var(--accent); display: flex; justify-content: space-between; gap: 3mm; }
+.it h3 .d { color: var(--muted); font-weight: 600; white-space: nowrap; }
+.it .meta { color: var(--muted); font-size: 7.6pt; }
+.it ul { margin: .6mm 0 0 4mm; }
+.it li { margin-bottom: .3mm; }
+.it a { color: var(--link); text-decoration: none; font-size: 7.6pt; }
+.cert { display: flex; justify-content: space-between; gap: 3mm; margin-bottom: .9mm; }
+.cert b { font-weight: 700; }
+.cert .d { color: var(--muted); font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <h1>SANTIAGO RODRIGUEZ JIMENEZ</h1>
+  <div class="role">Estudiante de Ingeniería de Software · Full stack &amp; datos</div>
+  <p class="sum">Estudiante de VII semestre de Ingeniería de Software. Construyo sitios web con HTML, CSS, JavaScript y React, apps móviles con Flutter y backends con Java, Spring Boot y Python. Entregué un sitio en producción para un cliente real y trabajo en equipo con Git y GitHub. Busco mi práctica empresarial en desarrollo full stack o analítica de datos, con disponibilidad inmediata.</p>
+</header>
+<div class="cols">
+<aside>
+  <h2>CONTACTO</h2>
+  <div class="k">Teléfono</div><div class="v">(+57) 323 475 7670</div>
+  <div class="k">Correo</div><div class="v">santiago.rodriguezj12@gmail.com</div>
+  <div class="k">Ubicación</div><div class="v">Medellín, Antioquia</div>
+  <div class="k">Portafolio</div><div class="v">santiago12r.github.io</div>
+  <div class="k">LinkedIn</div><div class="v">linkedin.com/in/santiago12r</div>
+  <div class="k">GitHub</div><div class="v">github.com/santiago12R</div>
+  <div class="avail"><b>Práctica empresarial</b>Disponibilidad inmediata</div>
+
+  <h2>IDIOMAS</h2>
+  <ul><li>Español — nativo</li><li>Inglés — básico</li></ul>
+
+  <h2>STACK TÉCNICO</h2>
+  <div class="grp">FRONT-END</div>
+  <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Bootstrap</span></div>
+  <div class="grp">BACK-END Y DATOS</div>
+  <div class="chips"><span>Java</span><span>Spring Boot</span><span>Python</span><span>Flask</span><span>MySQL</span><span>Firestore</span><span>API REST</span><span>WebSockets</span><span>Gradio</span></div>
+  <div class="grp">MÓVIL</div>
+  <div class="chips"><span>Flutter</span><span>Dart</span></div>
+  <div class="grp">HERRAMIENTAS</div>
+  <div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span><span>Docker</span><span>Google Cloud</span></div>
+
+  <h2>HABILIDADES</h2>
+  <ul><li>Trabajo en equipos multidisciplinarios</li><li>Cumplimiento de tiempos</li><li>Compromiso y autogestión</li><li>Lectura de código ajeno</li></ul>
+
+  <h2>REFERENCIAS</h2>
+  <div class="ref"><b>Carlos Jimenez</b>Coordinador académico, Centro de Servicios de Salud SENA<br>cjimenezb@sena.edu.co · (+57) 312 214 1435</div>
+  <div class="ref"><b>José Castilla Jimenez</b>Tecnólogo en Imágenes Diagnósticas<br>josefelipecastillajimenez1@gmail.com · (+57) 302 258 5402</div>
+</aside>
+<main>
+  <h2>EDUCACIÓN</h2>
+  <div class="it"><h3>Universidad Cooperativa de Colombia</h3><div class="meta">Ingeniería de Software · 2023 – actualidad (VII semestre) · Medellín</div></div>
+  <div class="it"><h3>Colegio Nuestra Señora de las Mercedes</h3><div class="meta">Bachiller · 2022 · Sincelejo, Sucre</div></div>
+
+  <h2>PROYECTOS</h2>
+  <div class="it"><h3>Casa Rendón — sitio web para cliente real (en producción)</h3><div class="meta">2026 · HTML, CSS, JavaScript, React</div>
+    <ul><li>Sitio de una marca de café y vino de Andes, Antioquia: 7 secciones y reservas por WhatsApp.</li>
+    <li>Mi rol: maquetación, interactividad y componentes en React. <a href="https://casarendon.com">casarendon.com</a></li></ul></div>
+  <div class="it"><h3>Numi — app educativa móvil (en desarrollo)</h3><div class="meta">2026 · Flutter, Dart, MVVM · equipo de 4 personas</div>
+    <ul><li>App para niños de primaria de zonas rurales de Medellín: 15 actividades en 5 materias y funcionamiento sin internet.</li>
+    <li>Mi rol: pantallas, diseño responsive, juegos interactivos y documentación técnica.</li></ul></div>
+  <div class="it"><h3>Numi Admin — panel web administrativo (en desarrollo)</h3><div class="meta">2026 · HTML, CSS, JavaScript, Python, Flask, Firestore · proyecto integrador</div>
+    <ul><li>Panel para que administradores y coordinadores gestionen usuarios, roles y contenido educativo de Numi y vean el progreso de los estudiantes.</li></ul></div>
+  <div class="it"><h3>Clasificador de letras EMNIST — analítica de datos</h3><div class="meta">2026 · Python, Gradio · trabajo en pareja</div>
+    <ul><li>Modelo que reconoce letras escritas a mano del dataset EMNIST Letters, con demo interactiva en Gradio.</li>
+    <li>Mi rol: curvas de entrenamiento, selección y prueba del modelo, despliegue y demo.</li></ul></div>
+  <div class="it"><h3>BlackJack Royale — casino web multijugador</h3><div class="meta">2025 · JavaScript, Python, WebSockets</div>
+    <ul><li>Modo contra la máquina y multijugador en tiempo real; 6 módulos de JavaScript y servidor en Python. Mi rol: front-end y servidor.</li></ul></div>
+  <div class="it"><h3>CineX — API REST para gestión de un cine</h3><div class="meta">2025 · Java, Spring Boot, MySQL</div>
+    <ul><li>API REST con 8 clases de servicio. Mi rol: capa de servicios con la lógica de negocio.</li></ul></div>
+
+  <h2>EXPERIENCIA</h2>
+  <div class="it"><h3>Atención al cliente</h3>
+    <ul><li>Atención directa a clientes, resolviendo solicitudes de forma eficiente.</li>
+    <li>Aplicación de habilidades de comunicación y orientación al servicio.</li></ul></div>
+
+  <h2>CERTIFICACIONES Y CURSOS</h2>
+  <div class="cert"><span><b>Hacker ético</b> — Cisco Networking Academy · Ministerio de Educación Nacional</span><span class="d">Nov 2026</span></div>
+  <div class="cert"><span><b>Cloud Computing Fundamentals</b> — Google Cloud Skills Boost</span><span class="d">2025</span></div>
+  <div class="cert"><span><b>Infrastructure in Google Cloud</b> — Google Cloud Skills Boost</span><span class="d">2025</span></div>
+  <div class="cert"><span><b>Cloud Load Balancing</b> — Google Cloud Skills Boost</span><span class="d">2025</span></div>
+  <div class="cert"><span><b>Set Up an App Dev Environment on Google Cloud</b> — Google Cloud Skills Boost</span><span class="d">2025</span></div>
+  <div class="cert"><span><b>Programación Básica Orientada a Entornos Multimedia</b> — contenido digital y sitios web para marcas</span><span class="d">2025</span></div>
+</main>
+</div>
+</div>
+</body>
+</html>
